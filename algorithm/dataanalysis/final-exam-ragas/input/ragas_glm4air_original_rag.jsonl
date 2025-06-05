@@ -1,0 +1,48 @@
+{"query": "JDK 和 JRE 有什么区别？", "raw_response": {}}
+{"query": "== 和 equals 的区别是什么？", "raw_response": {}}
+{"query": "两个对象的 hashCode() 相同，则 equals() 也一定为 true，对吗？", "raw_response": {}}
+{"query": "final 在 Java 中有什么作用？", "raw_response": {"answer": "在Java中，`final`关键字有以下几个作用：\n\n1. **修饰变量**：当用`final`修饰一个变量时，该变量的值一旦被初始化后就不能被更改。\n\n2. **修饰方法**：当用`final`修饰一个方法时，该方法不能被子类覆盖（override）。\n\n3. **修饰类**：当用`final`修饰一个类时，该类不能被继承。\n\n`final`关键字用于表示常量或不变性，确保了代码的安全性和可维护性。\n\n关于`final`的详细用法，可以参考Java的官方文档或相关教程。", "source": ["https://liaoxuefeng.com/books/java/oop/core/utils/index.html"]}}
+{"query": "Math.round(-1.5) 等于多少？", "raw_response": {}}
+{"query": "String 属于基础的数据类型吗？", "raw_response": {"answer": "String不属于Java的基本数据类型。在Java中，基本数据类型包括：整数类型（byte，short，int，long）、浮点数类型（float，double）、字符类型（char）和布尔类型（boolean）。String是一个引用类型，它指向内存中的一个对象。在文档中提到，引用类型的变量类似于C语言的指针，它内部存储一个“地址”，指向某个对象在内存的位置。因此，String是引用类型而不是基本数据类型。更多信息可以参考以下文档：[Java 基本类型和引用类型](https://liaoxuefeng.com/books/java/quick-start/basic/var-type/index.html)。", "source": ["https://liaoxuefeng.com/books/java/quick-start/basic/var-type/index.html"]}}
+{"query": "Java 中操作字符串都有哪些类？它们之间有什么区别？", "raw_response": {"answer": "在Java中，操作字符串主要有以下几个类：\n\n- **String**：字符串常量，不可变，每次修改都会生成新的字符串对象。\n- **StringBuilder**：可变的字符序列，适用于单线程环境下的字符串拼接操作。\n- **StringBuffer**：与StringBuilder类似，但它是线程安全的，适用于多线程环境下的字符串拼接操作。\n- **StringJoiner**：用于构造由分隔符分隔的字符串序列。\n\n它们之间的主要区别在于是否可变以及线程安全性。String是不可变的，而StringBuilder和StringBuffer是可变的。StringBuilder不是线程安全的，而StringBuffer是线程安全的。", "source": ["https://liaoxuefeng.com/books/java/oop/core/index.html", "https://liaoxuefeng.com/books/java/oop/core/string-encoding/index.html", "https://liaoxuefeng.com/books/java/oop/core/string-builder/index.html", "https://liaoxuefeng.com/books/java/oop/core/string-joiner/index.html"]}}
+{"query": "String str=\"i\"与 String str=new String(\"i\")一样吗？", "raw_response": {}}
+{"query": "如何将字符串反转？", "raw_response": {"answer": "在Java中，字符串是不可变的，这意味着一旦创建了一个字符串，它的值就不能被改变。因此，要反转一个字符串，我们需要创建一个新的字符串，其中包含原字符串字符的逆序。以下是一个简单的Java代码示例，演示如何反转字符串：\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        String original = \"Hello, World!\";\n        String reversed = new StringBuilder(original).reverse().toString();\n        System.out.println(reversed);\n    }\n}\n```\n在这个例子中，我们使用了`StringBuilder`类的`reverse()`方法来反转字符串，然后通过`toString()`方法将其转换回`String`类型。`StringBuilder`是专门为可变字符串操作设计的类，它提供了很多方便的方法来修改字符串。\n\n**注意**：虽然`String`类本身没有提供直接反转字符串的方法，但我们可以通过创建一个`StringBuilder`对象，传入原始字符串，然后调用`reverse()`方法来实现反转。", "source": ["https://liaoxuefeng.com/books/java/oop/core/string-encoding/index.html"]}}
+{"query": "String 类的常用方法都有哪些？", "raw_response": {}}
+{"query": "抽象类必须要有抽象方法吗？", "raw_response": {}}
+{"query": "抽象类能使用 final 修饰吗？", "raw_response": {}}
+{"query": "接口和抽象类有什么区别？", "raw_response": {}}
+{"query": "Java 中 IO 流分为几种？", "raw_response": {}}
+{"query": "BIO、NIO、AIO 有什么区别？", "raw_response": {}}
+{"query": "Files 的常用方法都有哪些？", "raw_response": {}}
+{"query": "Java 容器都有哪些？", "raw_response": {}}
+{"query": "Collection 和 Collections 有什么区别？", "raw_response": {}}
+{"query": "List、Set、Map 之间的区别是什么？", "raw_response": {}}
+{"query": "HashMap 和 Hashtable 有什么区别？", "raw_response": {}}
+{"query": "如何决定使用 HashMap 还是 TreeMap？", "raw_response": {}}
+{"query": "HashMap 的实现原理？", "raw_response": {}}
+{"query": "HashSet 的实现原理？", "raw_response": {}}
+{"query": "ArrayList 和 LinkedList 的区别？", "raw_response": {}}
+{"query": "数组与 List 的转换方式？", "raw_response": {}}
+{"query": "ArrayList 和 Vector 有什么区别？", "raw_response": {}}
+{"query": "Array 和 ArrayList 的区别？", "raw_response": {}}
+{"query": "Queue 中 poll() 和 remove() 区别？", "raw_response": {"answer": "在Java中，`Queue`接口提供了`poll()`和`remove()`两种方法来移除队列中的元素。这两个方法的主要区别在于它们在队列为空时的行为。`poll()`方法在队列为空时会返回`null`，而`remove()`方法会抛出`NoSuchElementException`异常。因此，如果你不确定队列是否为空，使用`poll()`方法会更安全。如果你希望队列在为空时抛出异常，可以使用`remove()`方法。", "source": []}}
+{"query": "哪些集合类是线程安全的？", "raw_response": {}}
+{"query": "Iterator 是什么？", "raw_response": {"answer": "Iterator 是 Java 中用于遍历集合（如数组、列表等）的一种设计模式。它提供了一种标准的方法来访问集合中的元素，而无需暴露集合的内部结构。使用 Iterator，你可以逐个访问集合中的元素，并执行如删除、修改等操作。在 Java 中，Iterator 接口定义了 hasNext() 和 next() 等方法，用于检查集合中是否还有更多元素以及获取下一个元素。此外，还可以使用 remove() 方法来删除当前元素。", "source": ["https://liaoxuefeng.com/books/java/quick-start/flow/index.html"]}}
+{"query": "Iterator 怎么使用？", "raw_response": {}}
+{"query": "Iterator 和 ListIterator 区别？", "raw_response": {}}
+{"query": "并行和并发有什么区别？", "raw_response": {"answer": "并行（Parallelism）和并发（Concurrency）是两个常被提及的概念，它们在计算机科学中有着不同的含义：\n\n- **并行**指的是在同一时刻可以同时执行多个任务。这通常涉及到多个处理器或多核处理器，它们可以同时处理多个线程或进程。\n\n- **并发**指的是系统能够处理多个任务，这些任务在宏观上是同时进行的，但在微观上可能是交替执行的。并发处理可以是通过多线程、多任务等方式实现的，使得系统能够在单个处理器上快速切换，给人一种同时进行的错觉。\n\n简而言之，并行关注的是物理上的同时执行，而并发关注的是逻辑上的同时处理能力。\n\n根据提供的文档，这些概念并没有直接提及，因此无法从文档中找到相关的内容。", "source": []}}
+{"query": "线程和进程的区别？", "raw_response": {}}
+{"query": "守护线程是什么？", "raw_response": {"answer": "守护线程（Daemon Thread）是一种特殊的线程，当Java虚拟机退出时，守护线程会被自动回收，不会阻止虚拟机的退出。与之相对的是用户线程，用户线程是Java程序中不可或缺的线程，它们执行具体的任务。如果所有的用户线程都已经结束，但仍有守护线程在运行，Java虚拟机依然会退出。\n\n守护线程通常用于执行那些不需要等待完成的任务，比如垃圾回收器就是一个守护线程。在Java中，可以通过调用`Thread.setDaemon(true)`方法将一个线程设置为守护线程。", "source": ["https://liaoxuefeng.com/books/java/threading/daemon/index.html"]}}
+{"query": "创建线程的方式？", "raw_response": {}}
+{"query": "Runnable 和 Callable 区别？", "raw_response": {}}
+{"query": "线程状态有哪些？", "raw_response": {"answer": "Java中的线程状态有以下几种：\n\n- **新建状态（New）**：当创建了一个线程后，它就处于这个状态。\n- **就绪状态（Runnable）**：线程具备运行条件，等待被线程调度器选中获取CPU的执行权。\n- **运行状态（Running）**：线程获取CPU权限进行执行任务。\n- **阻塞状态（Blocked）**：线程因为等待某些资源或者因为同步锁而被阻塞。\n- **等待状态（Waiting）**：线程等待其他线程执行特定操作（如通知）。\n- **超时等待状态（Timed Waiting）**：线程等待其他线程执行特定操作，但是等待时间有限。\n- **终止状态（Terminated）**：线程执行结束后的状态。\n\n以上是Java线程的基本状态及其解释。", "source": []}}
+{"query": "sleep() 和 wait() 区别？", "raw_response": {}}
+{"query": "notify() 和 notifyAll() 区别？", "raw_response": {}}
+{"query": "run() 和 start() 区别？", "raw_response": {}}
+{"query": "线程池创建方式？", "raw_response": {"answer": "在Java中，创建线程池有多种方式。最常用的方式是通过`Executors`类提供的工厂方法来创建。例如，可以使用`Executors.newFixedThreadPool(int nThreads)`来创建一个固定大小的线程池，其中`nThreads`参数指定了线程池中的线程数量。此外，还可以使用`Executors.newCachedThreadPool()`来创建一个可缓存的线程池，这种线程池会根据需要创建新线程，并在空闲时回收旧线程。另外，`Executors.newSingleThreadExecutor()`可以创建一个单线程的线程池，确保所有任务都在同一个线程中按顺序执行。最后，`Executors.newScheduledThreadPool(int corePoolSize)`可以创建一个可以延迟或定期执行任务的线程池。", "source": ["https://liaoxuefeng.com/books/java/threading/pool/index.html"]}}
+{"query": "线程池状态有哪些？", "raw_response": {}}
+{"query": "submit() 和 execute() 区别？", "raw_response": {}}
+{"query": "如何保证多线程安全？", "raw_response": {}}
+{"query": "多线程锁的升级机制？", "raw_response": {}}
+{"query": "什么是死锁？", "raw_response": {}}
+{"query": "如何避免死锁？", "raw_response": {}}

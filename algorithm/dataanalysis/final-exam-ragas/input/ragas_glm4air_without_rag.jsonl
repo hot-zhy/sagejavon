@@ -1,0 +1,48 @@
+{"query": "JDK 和 JRE 有什么区别？", "raw_response": {}}
+{"query": "== 和 equals 的区别是什么？", "raw_response": {}}
+{"query": "两个对象的 hashCode() 相同，则 equals() 也一定为 true，对吗？", "raw_response": {}}
+{"query": "final 在 Java 中有什么作用？", "raw_response": {}}
+{"query": "Math.round(-1.5) 等于多少？", "raw_response": {"answer": "在Java中，`Math.round(-1.5)` 的结果是 `-2`。这是因为 `Math.round` 方法会对传入的浮点数进行四舍五入到最接近的整数。对于负数，`Math.round` 方法遵循向零的方向舍入的规则，也就是说，它会舍入到较大的整数值。因此，`-1.5` 会被四舍五入到 `-2`。", "source": []}}
+{"query": "String 属于基础的数据类型吗？", "raw_response": {"answer": "String 不属于Java的基础数据类型（primitive data types）。Java的基础数据类型包括：byte、short、int、long、float、double、char和boolean。String 是一个类（class），属于Java的引用数据类型（reference types）。它用于表示一系列字符，并且是 `java.lang` 包的一部分，可以被用来创建和操作字符串对象。", "source": []}}
+{"query": "Java 中操作字符串都有哪些类？它们之间有什么区别？", "raw_response": {}}
+{"query": "String str=\"i\"与 String str=new String(\"i\")一样吗？", "raw_response": {}}
+{"query": "如何将字符串反转？", "raw_response": {}}
+{"query": "String 类的常用方法都有哪些？", "raw_response": {}}
+{"query": "抽象类必须要有抽象方法吗？", "raw_response": {}}
+{"query": "抽象类能使用 final 修饰吗？", "raw_response": {"answer": "抽象类**不能**使用`final`修饰。在Java中，`final`关键字用来表示最终的、不可变的实体。如果一个类被声明为`final`，则它不能被继承；而抽象类正是为了被继承而设计的，因此不能声明为`final`。此外，抽象类可以包含抽象方法，这些方法没有具体的实现，需要子类去覆盖实现，这与`final`的用途相矛盾。", "source": []}}
+{"query": "接口和抽象类有什么区别？", "raw_response": {}}
+{"query": "Java 中 IO 流分为几种？", "raw_response": {}}
+{"query": "BIO、NIO、AIO 有什么区别？", "raw_response": {}}
+{"query": "Files 的常用方法都有哪些？", "raw_response": {}}
+{"query": "Java 容器都有哪些？", "raw_response": {}}
+{"query": "Collection 和 Collections 有什么区别？", "raw_response": {}}
+{"query": "List、Set、Map 之间的区别是什么？", "raw_response": {}}
+{"query": "HashMap 和 Hashtable 有什么区别？", "raw_response": {}}
+{"query": "如何决定使用 HashMap 还是 TreeMap？", "raw_response": {}}
+{"query": "HashMap 的实现原理？", "raw_response": {}}
+{"query": "HashSet 的实现原理？", "raw_response": {}}
+{"query": "ArrayList 和 LinkedList 的区别？", "raw_response": {}}
+{"query": "数组与 List 的转换方式？", "raw_response": {}}
+{"query": "ArrayList 和 Vector 有什么区别？", "raw_response": {}}
+{"query": "Array 和 ArrayList 的区别？", "raw_response": {}}
+{"query": "Queue 中 poll() 和 remove() 区别？", "raw_response": {}}
+{"query": "哪些集合类是线程安全的？", "raw_response": {}}
+{"query": "Iterator 是什么？", "raw_response": {}}
+{"query": "Iterator 怎么使用？", "raw_response": {}}
+{"query": "Iterator 和 ListIterator 区别？", "raw_response": {"answer": "[Error] internal error occurred: 'float' object is not iterable", "source": []}}
+{"query": "并行和并发有什么区别？", "raw_response": {}}
+{"query": "线程和进程的区别？", "raw_response": {}}
+{"query": "守护线程是什么？", "raw_response": {}}
+{"query": "创建线程的方式？", "raw_response": {}}
+{"query": "Runnable 和 Callable 区别？", "raw_response": {}}
+{"query": "线程状态有哪些？", "raw_response": {}}
+{"query": "sleep() 和 wait() 区别？", "raw_response": {}}
+{"query": "notify() 和 notifyAll() 区别？", "raw_response": {}}
+{"query": "run() 和 start() 区别？", "raw_response": {}}
+{"query": "线程池创建方式？", "raw_response": {}}
+{"query": "线程池状态有哪些？", "raw_response": {}}
+{"query": "submit() 和 execute() 区别？", "raw_response": {}}
+{"query": "如何保证多线程安全？", "raw_response": {}}
+{"query": "多线程锁的升级机制？", "raw_response": {}}
+{"query": "什么是死锁？", "raw_response": {}}
+{"query": "如何避免死锁？", "raw_response": {}}

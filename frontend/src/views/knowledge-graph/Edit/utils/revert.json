@@ -1,0 +1,1447 @@
+{
+    "data": {
+        "text": "<p><span style=\"color: rgb(255, 255, 255); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none;\">java</span></p>",
+        "generalization": [],
+        "expand": true,
+        "richText": true,
+        "isActive": false,
+        "uid": "1"
+    },
+    "children": [
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c\u4e00\u7ae0 \u00b7 java\u7a0b\u5e8f\u8bbe\u8ba1\u6982\u8ff0</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "2"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7a0b\u5e8f\u8bbe\u8ba1\u5e73\u53f0</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "3"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5173\u952e\u672f\u8bed</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "4"
+                    },
+                    "children": [
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7b80\u5355\u6027</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "5"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u9762\u5411\u5bf9\u8c61</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "6"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7f51\u7edc\u6280\u80fd</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "7"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5065\u58ee\u6027</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "8"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5b89\u5168\u6027</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "9"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4f53\u7cfb\u7ed3\u6784\u4e2d\u7acb</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "10"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u53ef\u79fb\u690d\u6027</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "11"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u89e3\u91ca\u6027</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "12"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u9ad8\u6027\u80fd</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "13"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u591a\u7ebf\u7a0b</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "14"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u52a8\u6001\u6027</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "15"
+                            },
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">JavaApplet\u4e0eInternet</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "16"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u53d1\u5c55\u53f2</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "17"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5e38\u89c1\u8bef\u89e3</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "18"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c\u4e8c\u7ae0 \u00b7 \u7a0b\u5e8f\u8bbe\u8ba1\u73af\u5883</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "19"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5f00\u53d1\u5de5\u5177\u7bb1</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "20"
+                    },
+                    "children": [
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4e0b\u8f7dJDK</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "21"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u8bbe\u7f6e\u6267\u884c\u8def\u5f84</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "22"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5b89\u88c5\u6e90\u4ee3\u7801\u5e93\u548c\u6587\u6863</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "23"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5b89\u88c5\u672c\u4e66\u4e2d\u7684\u793a\u4f8b</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "24"
+                            },
+                            "children": []
+                        },
+                        {
+                            "data": {
+                                "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5bfc\u822aJava\u76ee\u5f55</span></p>",
+                                "generalization": [],
+                                "expand": true,
+                                "richText": true,
+                                "isActive": false,
+                                "uid": "25"
+                            },
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u9009\u62e9\u5f00\u53d1\u73af\u5883</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "26"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4f7f\u7528\u547d\u4ee4\u884c</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "27"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4f7f\u7528\u96c6\u6210\u5f00\u53d1\u73af\u5883</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "28"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u8fd0\u884c\u56fe\u5f62\u5316\u5e94\u7528\u7a0b\u5e8f</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "29"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5efa\u7acb\u5e76\u8fd0\u884capplet</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "30"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c\u4e09\u7ae0 \u00b7 \u7a0b\u5e8f\u8bbe\u8ba1\u7ed3\u6784</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "31"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7b80\u5355\u7a0b\u5e8f</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "32"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6ce8\u91ca</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "33"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6570\u636e\u7c7b\u578b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "34"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u53d8\u91cf</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "35"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u8fd0\u7b97\u7b26</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "36"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5b57\u7b26\u4e32</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "37"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u8f93\u5165\u8f93\u51fa</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "38"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u63a7\u5236\u6d41\u7a0b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "39"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5927\u6570\u503c</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "40"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6570\u7ec4</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "41"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c\u56db\u7ae0 \u00b7 \u5bf9\u8c61\u4e0e\u7c7b</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "42"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u9762\u5411\u5bf9\u8c61\u8bbe\u8ba1\u6982\u8ff0</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "43"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4f7f\u7528\u73b0\u6709\u7c7b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "44"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7528\u6237\u81ea\u5b9a\u4e49\u7c7b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "45"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u9759\u6001\u57df\u4e0e\u9759\u6001\u65b9\u6cd5</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "46"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u65b9\u6cd5\u53c2\u6570</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "47"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5bf9\u8c61\u6784\u9020</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "48"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5305</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "49"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7c7b\u8def\u5f84</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "50"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6587\u6863\u6ce8\u91ca</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "51"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7c7b\u8bbe\u8ba1\u6280\u5de7</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "52"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c\u4e94\u7ae0 \u00b7 \u7ee7\u627f</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "53"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7c7b\u3001\u8d85\u7c7b\u548c\u5b50\u7c7b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "54"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Object: \u6240\u6709\u7c7b\u7684\u8d85\u7c7b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "55"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6cdb\u578b\u6570\u7ec4\u5217\u8868</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "56"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5bf9\u8c61\u5305\u88c5\u5668\u4e0e\u81ea\u52a8\u6253\u5305</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "57"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u53c2\u6570\u6570\u91cf\u53ef\u53d8\u7684\u65b9\u6cd5</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "58"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u53cd\u5c04</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "59"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u679a\u4e3e\u7c7b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "60"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7ee7\u627f\u8bbe\u8ba1\u7684\u6280\u5de7</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "61"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c\u516d\u7ae0 \u00b7 \u63a5\u53e3\u4e0e\u5185\u90e8\u7c7b</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "62"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u63a5\u53e3</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "63"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5bf9\u8c61\u514b\u9686</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "64"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u63a5\u53e3\u4e0e\u56de\u8c03</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "65"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5185\u90e8\u7c7b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "66"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4ee3\u7406</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "67"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c\u4e03\u7ae0 \u00b7 \u56fe\u5f62\u7a0b\u5e8f\u8bbe\u8ba1</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "68"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Swing</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "69"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u521b\u5efa\u6846\u67b6</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "70"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6846\u67b6\u5b9a\u4f4d</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "71"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6846\u67b6\u5c5e\u6027</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "72"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u51b3\u5b9a\u6846\u67b6\u5927\u5c0f</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "73"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7ec4\u4ef6\u4e2d\u663e\u793a\u4fe1\u606f</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "74"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">2D\u56fe\u5f62</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "75"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u989c\u8272</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "76"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7279\u6b8a\u5b57\u4f53</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "77"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u56fe\u50cf</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "78"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u00b7\u7b2c\u516b\u7ae0 \u00b7 \u4e8b\u4ef6\u5904\u7406</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "79"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u57fa\u7840</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "80"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u52a8\u4f5c</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "81"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u9f20\u6807\u4e8b\u4ef6</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "82"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">AWT\u4e8b\u4ef6\u96c6\u6210\u5c42\u6b21</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "83"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c\u4e5d\u7ae0 \u00b7  Swing\u548c\u6a21\u578b-\u89c6\u56fe-\u63a7\u5236\u5668\u8bbe\u8ba1\u6a21\u5f0f</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "84"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5e03\u5c40\u7ba1\u7406\u5668</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "85"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6587\u672c\u8f93\u5165</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "86"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u9009\u62e9\u7ec4\u4ef6</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "87"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u83dc\u5355</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "88"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u590d\u6742\u5e03\u5c40\u7ba1\u7406</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "89"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5bf9\u8bdd\u6846</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "90"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c10\u7ae0 \u00b7 \u90e8\u7f72\u5e94\u7528\u7a0b\u5e8f\u548capplet</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "91"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">JAR\u6587\u4ef6</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "92"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Java Web Start</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "93"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Applet</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "94"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5e94\u7528\u7a0b\u5e8f\u5b58\u50a8\u7684\u914d\u7f6e</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "95"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c11\u7ae0 \u00b7 \u5f02\u5e38\u3001\u65e5\u5fd7\u3001\u65ad\u8a00\u548c\u8c03\u8bd5</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "96"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5904\u7406\u5f02\u5e38</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "97"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6355\u83b7\u5f02\u5e38</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "98"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4f7f\u7528\u5f02\u5e38\u673a\u5236\u7684\u5efa\u8bae</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "99"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u65ad\u8a00</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "100"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u8bb0\u5f55\u65e5\u5fd7</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "101"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u8c03\u8bd5\u6280\u672f</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "102"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c12\u7ae0 \u00b7 \u6cdb\u578b\u7a0b\u5e8f\u8bbe\u8ba1</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "103"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4e3a\u4ec0\u4e48\u4f7f\u7528\u6cdb\u578b\u7a0b\u5e8f\u8bbe\u8ba1</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "104"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7b80\u5355\u6cdb\u578b\u7c7b\u5b9a\u4e49</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "105"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6cdb\u578b\u65b9\u6cd5</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "106"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6cdb\u578b\u53d8\u91cf\u7684\u9650\u5b9a</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "107"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6cdb\u578b\u4ee3\u7801\u548c\u865a\u62df\u673a</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "108"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7ea6\u675f\u4e0e\u5c40\u9650\u6027</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "109"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6cdb\u578b\u7c7b\u578b\u7684\u7ee7\u627f\u89c4\u5219</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "110"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u901a\u914d\u7b26\u7c7b\u578b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "111"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u53cd\u5c04\u548c\u6cdb\u578b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "112"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c13\u7ae0 \u00b7 \u96c6\u5408</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "113"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u96c6\u5408\u63a5\u53e3</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "114"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u5177\u4f53\u7684\u96c6\u5408</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "115"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u96c6\u5408\u6846\u67b6</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "116"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7b97\u6cd5</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "117"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u9057\u7559\u7684\u96c6\u5408</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "118"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "data": {
+                "text": "<p><span style=\"color: rgb(144, 79, 68); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">\u7b2c14\u7ae0 \u00b7 \u591a\u7ebf\u7a0b</span></p>",
+                "generalization": [],
+                "expand": true,
+                "richText": true,
+                "isActive": false,
+                "uid": "119"
+            },
+            "children": [
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7ebf\u7a0b\u6982\u5ff5</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "120"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u4e2d\u65ad\u7ebf\u7a0b</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "121"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7ebf\u7a0b\u72b6\u6001</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "122"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7ebf\u7a0b\u5c5e\u6027</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "123"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u540c\u6b65</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "124"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u963b\u585e\u961f\u5217</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "125"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7ebf\u7a0b\u5b89\u5168\u7684\u96c6\u5408</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "126"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Callable\u4e0eFuture</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "127"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u6267\u884c\u5668</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "128"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u540c\u6b65\u5668</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "129"
+                    },
+                    "children": []
+                },
+                {
+                    "data": {
+                        "text": "<p><span style=\"color: rgb(131, 90, 64); font-family: \u5fae\u8f6f\u96c5\u9ed1, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">\u7ebf\u7a0b\u4e0eSwing</span></p>",
+                        "generalization": [],
+                        "expand": true,
+                        "richText": true,
+                        "isActive": false,
+                        "uid": "130"
+                    },
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1447 @@
+{
+	"data": {
+		"text": "<p><span style=\"color: rgb(255, 255, 255); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none;\">java</span></p>",
+		"generalization": [],
+		"expand": true,
+		"richText": true,
+		"isActive": false,
+		"uid": "9876438e-35b0-4f9a-bbaa-b09c7e165eb3"
+	},
+	"children": [
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第一章 · java程序设计概述</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "52277184-3a7d-4005-bf3a-61c4e9c90ff8"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">程序设计平台</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "bf22b6ec-eb57-4934-8357-3916207e3d90"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">关键术语</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "35b949aa-d91d-494e-a0ee-bebc19750507"
+					},
+					"children": [
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">简单性</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "66a57d1d-8eb3-49e5-88ac-cdb646c0d724"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">面向对象</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "ddaee4aa-37aa-4ff1-98dd-d9fe1ae1dfca"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">网络技能</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "7d27c8e4-874a-454e-8c5a-9fb88aa96d90"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">健壮性</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "5d62b99d-3788-45b3-a99f-1855fe1a3c7b"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">安全性</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "694a2148-36e3-48de-b147-40e509e6b88d"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">体系结构中立</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "909edb72-51d0-401f-8e80-dfe942ec91d9"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">可移植性</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "491acabe-5939-43da-8ba4-e09aad8cc00a"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">解释性</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "c56ba8b7-9ee9-4896-abaf-e6ccd37c9e9a"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">高性能</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "a6c8c430-0223-41a8-8683-5d9a24975ed7"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">多线程</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "0637e600-bb47-4262-a700-c0df61dd97f0"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">动态性</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "1898a291-c2b7-49eb-9860-26e3fbc0ae2a"
+							},
+							"children": []
+						}
+					]
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">JavaApplet与Internet</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "3ed53332-bd56-4c48-9412-a1dc2d559f09"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">发展史</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "b176b76b-0612-4221-a15b-c8a8d303fabb"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">常见误解</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "2efaf1af-65de-4713-abf0-69f5e51756d8"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第二章 · 程序设计环境</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "3bbe06e4-0819-4d8f-9aef-1d18df77c6e1"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">开发工具箱</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "6b941162-bd74-4dc1-b8ee-89657015b12b"
+					},
+					"children": [
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">下载JDK</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "54f484bf-f592-44ea-a85e-9ed50481906e"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">设置执行路径</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "dc65cf7f-2549-44cf-a59d-e807d1e3b10a"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">安装源代码库和文档</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "15d994cc-c0e7-4999-89b7-b9bc2046a5c2"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">安装本书中的示例</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "d20243a1-ebd5-4709-8f06-de52da672164"
+							},
+							"children": []
+						},
+						{
+							"data": {
+								"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">导航Java目录</span></p>",
+								"generalization": [],
+								"richText": true,
+								"expand": true,
+								"isActive": false,
+								"uid": "98cfeecd-6470-4721-a3a6-79f7c35bfcbc"
+							},
+							"children": []
+						}
+					]
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">选择开发环境</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "065b528c-6827-4a9f-98f0-28c92debfde2"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">使用命令行</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "65839a1e-b37c-4073-997b-1e3af5e2b9ac"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">使用集成开发环境</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "29adcf6d-c3d3-43ae-afa1-f755e69ce6e8"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">运行图形化应用程序</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "fd2ebcb7-e3b1-483e-9a29-80f23454be20"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">建立并运行applet</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "53c2d1e1-82af-47de-89c2-38b747aed495"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第三章 · 程序设计结构</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "fc196ec0-c654-4400-a171-6f5c1399dff4"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">简单程序</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "12f4492b-253d-4f57-99db-0e1fc820dd6d"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">注释</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "fdbea5aa-70f2-4921-8049-f445470abdee"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">数据类型</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "da849682-4133-40a1-b182-aec7d0198ed3"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">变量</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "711415a6-914a-46d5-af07-4b74586331ee"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">运算符</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "008e6fbf-a494-4780-ba1b-2e2440397c8c"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">字符串</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "3f429207-40f8-4dfb-8372-399edd4cecb0"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">输入输出</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "d734956c-8277-4dca-a8cf-7d11b6c28d2a"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">控制流程</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "0623995d-471b-4c10-814c-a38eb9532084"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">大数值</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "69ec16bd-be65-49c0-8c93-da0226e32122"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">数组</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "08be39cc-955c-4ff7-ba9b-f71d9fe587bd"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第四章 · 对象与类</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "d94f1ddc-79a3-47f6-87ba-3b3bdb12ec8a"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">面向对象设计概述</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "ff50577a-7233-4727-8c91-fe7dd3671b01"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">使用现有类</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "95f663eb-fd58-464e-bb90-c33085428aa6"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">用户自定义类</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "f7ea7e65-a018-453c-9250-3d8520506df2"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">静态域与静态方法</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "980b4e6f-aa05-4485-b39e-9c1330dfb1e5"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">方法参数</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "82d32875-a83c-44c3-ad33-c7ebccbd9703"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">对象构造</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "dd98d20f-323c-408e-901c-c14145ef5794"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">包</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "a111524a-4b03-4c92-b424-00718a68b4b4"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">类路径</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "45754805-a22b-48d6-a347-0f21e3e2228b"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">文档注释</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "440fb17f-8f38-424b-9f9b-670fffa56fa0"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">类设计技巧</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "dd9047c1-8dc1-4076-a9d5-ef3aac877468"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第五章 · 继承</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "7ca70dc6-ddae-4a26-94ff-a58f35fb99d4"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">类、超类和子类</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "3c8232c1-589e-40ce-a4dc-8889eb3b78bb"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Object: 所有类的超类</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "8f5b2276-de17-483f-89ec-445fe07482ae"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">泛型数组列表</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "91a76724-b60e-45c8-9b00-10f10f78f4ca"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">对象包装器与自动打包</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "88692924-1278-41b0-aa87-52af4db9dacd"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">参数数量可变的方法</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "31879470-3c74-4d48-9f34-62aebdaf3f4e"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">反射</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "5aff4230-827b-4adf-89ea-57fff80637aa"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">枚举类</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "0a28f418-371c-4a75-bbf2-b529aea2c1eb"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">继承设计的技巧</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "e37e20dc-7eb7-4250-bed9-b508f40559f4"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第六章 · 接口与内部类</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "c52ff89a-31b8-4e75-ba7f-2b7e3d663b41"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">接口</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "7107cf94-bfe5-4424-b225-6f792a0c215d"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">对象克隆</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "d3013c25-0811-47d2-83a9-f739ced57b39"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">接口与回调</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "0f4ce4de-72c5-4806-a370-c1f71caf941f"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">内部类</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "f03bb6d4-8776-48e2-9508-d07e8f40ce72"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">代理</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "7639f144-1dd1-462e-94c9-d853c1c206e8"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第七章 · 图形程序设计</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "0bb5895a-07b9-43bf-a730-8e85488f2a01"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Swing</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "50f1da36-b0de-463d-b49f-265276ca9eda"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">创建框架</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "c7db6933-b5e8-4ed4-ab3a-e127ca9ddd56"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">框架定位</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "12de47ca-7270-432c-8ad2-83e8aa9fd565"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">框架属性</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "d7feebae-a0e4-48de-aa44-3032ceba1487"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">决定框架大小</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "8c2a0432-cf23-41d5-a5b4-48404a839f45"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">组件中显示信息</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "612f3e0d-d3b8-4e39-a05a-fb13cce57be4"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">2D图形</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "4aa81d71-83df-42be-9529-a493ada76fa1"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">颜色</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "4d5c4a86-c25e-46cb-82f4-7dc75db2b420"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">特殊字体</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "0f34e22c-5eed-4dde-a427-4c9e3f84e294"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">图像</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "f93943b8-de77-4aae-a063-856c5c966cfc"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">·第八章 · 事件处理</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "a7bf5366-2d04-4c55-9744-a7bfa39f7ce4"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">基础</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "8f1e7f45-aea1-4b39-a96c-1ae9eb52ecd4"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">动作</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "20a51033-927d-4b50-924a-8b4a4b10a4bd"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">鼠标事件</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "f1c431ad-1292-4921-85ea-faeb58d4fbb2"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">AWT事件集成层次</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "7aecf437-279b-4c15-81ba-c3063873769b"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第九章 ·  Swing和模型-视图-控制器设计模式</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "966dff28-eb68-49b9-bac9-d4cabd7f8d6b"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">布局管理器</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "edd3561f-5160-4f16-8dcb-ed9b4cce3f2e"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">文本输入</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "3595fbf7-c97d-4c49-8eb8-e0ff6e7d7e04"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">选择组件</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "a98c0f12-b4c2-45f9-a1a4-746edf1a237f"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">菜单</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "fc8a7bb8-2b65-478f-a43c-d7478da732ac"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">复杂布局管理</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "427c3727-1db2-48f8-890e-013e6f90e835"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">对话框</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "47f05493-30d1-4eeb-8d2f-494aa232db23"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第10章 · 部署应用程序和applet</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "602aa922-1063-47fd-8258-9ad7de18a051"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">JAR文件</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "940eb308-3035-4630-ba86-5888311a05b7"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Java Web Start</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "dd7cd274-1ca6-4bf7-9160-6f93d04e4144"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Applet</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "97a6dc83-54e1-4fb4-84ce-3682ae283369"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">应用程序存储的配置</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "a6d94c86-a434-4bf3-b1cc-cfe0c3e04625"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第11章 · 异常、日志、断言和调试</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "6b7d51e8-d50c-4903-843b-7c01f1b3a5aa"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">处理异常</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "ff355d85-4fe1-4d80-bb19-7b6b94f4c4e5"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">捕获异常</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "d3130cac-2163-460e-8002-c4948d51989e"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">使用异常机制的建议</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "7bfd2671-6e49-41de-acb7-5c503a626e7e"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">断言</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "b8eaeed3-c0ac-4b02-bef0-f4cc90fb36d6"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">记录日志</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "d8246906-d793-4a04-88d9-57ac0de4d690"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">调试技术</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "f5fb399e-5558-450f-8044-cdc852463979"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第12章 · 泛型程序设计</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "b8e196c7-ce3f-4710-8604-c6f59bc73523"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">为什么使用泛型程序设计</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "4087fe7c-1f07-45a4-9054-467f3f5891a2"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">简单泛型类定义</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "137f4e22-79d4-4d28-8d5d-b6c6a66954cc"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">泛型方法</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "f7a8f36c-ee07-46f8-9e9b-e6a991fc3811"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">泛型变量的限定</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "dd556780-b2b8-4fb2-9e7d-90e7160c71e8"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">泛型代码和虚拟机</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "35847b2c-3d56-4c7e-8879-ff7aac326bd2"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">约束与局限性</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "39d1a76f-b5ef-4592-9a94-59572676a6bb"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">泛型类型的继承规则</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "74e9686c-8489-4820-bde0-bba9e20fae53"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">通配符类型</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "33475ccb-a76b-4cdf-8e29-d537c90135cb"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">反射和泛型</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "dd1682b9-7941-4bdd-ac2a-0ed585a42387"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第13章 · 集合</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "b44675bc-ddbf-4ac6-8b45-18359de18c10"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">集合接口</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "18e22eda-3e2e-4547-8ac6-ae97c3608625"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">具体的集合</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "646b6d6f-e466-4fb0-a1da-294e51984a43"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">集合框架</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "c29c465b-938f-4585-b136-fcad5ea8d7d0"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">算法</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "86892976-fd4d-48c8-a090-c30e5c3ac8f5"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">遗留的集合</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "94539b2a-adc9-43f0-9a12-9c6042b1a289"
+					},
+					"children": []
+				}
+			]
+		},
+		{
+			"data": {
+				"text": "<p><span style=\"color: rgb(144, 79, 68); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; font-style: normal; text-decoration: none;\">第14章 · 多线程</span></p>",
+				"generalization": [],
+				"richText": true,
+				"expand": true,
+				"isActive": false,
+				"uid": "a5fd82fc-cbcc-4b2d-bef4-994518de760e"
+			},
+			"children": [
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">线程概念</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "7255e65f-1897-44c1-b9c3-d0c21a66d6d7"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">中断线程</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "d738ea1f-0eb9-4ddb-8f86-f2a97464bbad"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">线程状态</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "99b793a3-65e3-46cb-b775-c0acb6f50747"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">线程属性</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "cde1aec2-d099-4553-9bc1-f823efcb58aa"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">同步</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "68dda19d-bcf2-44f4-91fb-94817805e38a"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">阻塞队列</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "80346883-9a85-4ce0-b0e9-54351b7e4e3a"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">线程安全的集合</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "86258b3c-5f18-4c7d-b08d-0ef781b5beba"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">Callable与Future</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "6fd8b6cb-2907-4c00-b161-e1b34e26b4f0"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">执行器</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "b99e7a35-066c-42b9-a6f9-769c5ee1f566"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">同步器</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "5c62ebd5-260c-4bbc-af9f-e63e078a716c"
+					},
+					"children": []
+				},
+				{
+					"data": {
+						"text": "<p><span style=\"color: rgb(131, 90, 64); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-style: normal; text-decoration: none;\">线程与Swing</span></p>",
+						"generalization": [],
+						"richText": true,
+						"expand": true,
+						"isActive": false,
+						"uid": "e2bd44ce-e30e-4908-9766-5df252717c27"
+					},
+					"children": []
+				}
+			]
+		}
+	]
+}

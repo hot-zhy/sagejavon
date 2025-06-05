@@ -1,0 +1,289 @@
+<template>
+  <el-dialog custom-class="importNodeDialog" v-model="dialogVisible" title="导入" width="600px">
+    <el-upload
+      ref="upload"
+      action="x"
+      :file-list="fileList"
+      :auto-upload="false"
+      :multiple="false"
+      :on-change="onChange"
+      :limit="1"
+      :on-exceed="onExceed"
+    >
+      <el-button slot="trigger" size="default" type="primary">选择文件</el-button>
+      <div slot="tip" class="el-upload__tip">支持.smm、.json、.xmind、.xlsx、.md文件</div>
+    </el-upload>
+    <template #footer>
+      <span class="dialog-footer">
+        <el-button @click="cancel">取消</el-button>
+        <el-button type="primary" @click="confirm">确认</el-button>
+      </span>
+    </template>
+  </el-dialog>
+</template>
+
+<script setup>
+/**
+ * 
+ * @Desc: 导入功能
+ */
+import { onMounted, ref, watch } from 'vue'
+import bus from '@/utils/bus.js'
+import { ElMessage } from 'element-plus'
+// import MindMap from 'simple-mind-map'
+import xmind from 'simple-mind-map/src/parse/xmind.js'
+import markdown from 'simple-mind-map/src/parse/markdown.js'
+import { useStore } from 'vuex'
+import { fileToBuffer } from '@/utils'
+import { read, utils } from 'xlsx'
+import { convertJson } from './apis/treeConverter'
+import {postKnowledge } from './apis/post_knowledge'
+
+const dialogVisible = ref(false)
+const fileList = ref([])
+const store = useStore()
+
+watch(
+  () => dialogVisible.value,
+  (val, oldVal) => {
+    if (!val && oldVal) {
+      fileList.value = []
+    }
+  }
+)
+
+onMounted(() => {
+  bus.on('showImport', () => {
+    dialogVisible.value = true
+  })
+})
+
+/**
+ * 
+ * @Desc: 文件选择
+ */
+const onChange = file => {
+  let reg = /\.(smm|xmind|json|xlsx|md)$/
+  if (!reg.test(file.name)) {
+    ElMessage({
+      message: '请选择.smm、.json、.xmind、.xlsx、.md文件',
+      type: 'error'
+    })
+    fileList.value = []
+  } else {
+    fileList.value.push(file)
+  }
+}
+
+/**
+ * 
+ * @Desc: 数量超出限制
+ */
+const onExceed = () => {
+  ElMessage({
+    message: '最多只能选择一个文件',
+    type: 'warning'
+  })
+}
+
+/**
+ * 
+ * @Desc: 取消
+ */
+const cancel = () => {
+  dialogVisible.value = false
+}
+
+/**
+ * 
+ * @Desc: 确定导入
+ */
+const confirm = () => {
+  if (fileList.value.length <= 0) {
+    return ElMessage({
+      message: '请选择要导入的文件',
+      type: 'warning'
+    })
+  }
+  store.commit('setIsHandleLocalFile', false)
+  let file = fileList.value[0]
+  if (/\.(smm|json)$/.test(file.name)) {
+    handleSmm(file)
+  } else if (/\.xmind$/.test(file.name)) {
+    handleXmind(file)
+  } else if (/\.xlsx$/.test(file.name)) {
+    handleExcel(file)
+  } else if (/\.md$/.test(file.name)) {
+    handleMd(file)
+  }
+  cancel()
+}
+
+async function handleFileLoad(event) {
+  try {
+    let data = JSON.parse(event.target.result);
+    console.log(data);
+
+    if (typeof data !== 'object') {
+      throw new Error('文件内容有误');
+    }
+
+    // 调用转换函数
+    const result = convertJson(data);
+    console.log(result);
+
+    // 上传知识图谱到后端数据库
+    try {
+      const res = await postKnowledge(result);
+      console.log(res);
+      if (res.status === 200) {
+        console.log(res.data);
+      }
+    } catch (err) {
+      // 在这里处理获取用户信息失败的情况
+      console.log(err);
+    }
+
+    bus.emit('setData', data);
+    ElMessage({
+      message: '导入成功',
+      type: 'success'
+    });
+  } catch (error) {
+    console.log(error);
+    ElMessage({
+      message: '文件解析失败',
+      type: 'error'
+    });
+  }
+}
+
+const handleSmm = (file) => {
+  let fileReader = new FileReader();
+  fileReader.readAsText(file.raw);
+  fileReader.onload = handleFileLoad;
+  cancel();
+};
+/**
+ * 
+ * @Desc: 处理.xmind文件
+ */
+const handleXmind = async file => {
+  try {
+    // let data = await MindMap.xmind.parseXmindFile(file.raw)
+    let data = await xmind.parseXmindFile(file.raw) // 将xmind解析方法从MindMap类上移除，改为按需引入方式使用
+    bus.emit('setData', data)
+    ElMessage({
+      message: '导入成功',
+      type: 'success'
+    })
+  } catch (error) {
+    console.log(error)
+    ElMessage({
+      message: '文件解析失败',
+      type: 'error'
+    })
+  }
+}
+/**
+ * 
+ * @Desc: 处理.xlsx文件
+ */
+const handleExcel = async file => {
+  try {
+    const wb = read(await fileToBuffer(file.raw))
+    const data = utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], {
+      header: 1
+    })
+    if (data.length <= 0) {
+      return
+    }
+    let max = 0
+    data.forEach(arr => {
+      if (arr.length > max) {
+        max = arr.length
+      }
+    })
+    let layers = []
+    let walk = layer => {
+      if (!layers[layer]) {
+        layers[layer] = []
+      }
+      for (let i = 0; i < data.length; i++) {
+        if (data[i][layer]) {
+          let node = {
+            data: {
+              text: data[i][layer]
+            },
+            children: [],
+            _row: i
+          }
+          layers[layer].push(node)
+        }
+      }
+      if (layer < max - 1) {
+        walk(layer + 1)
+      }
+    }
+    walk(0)
+    let getParent = (arr, row) => {
+      for (let i = arr.length - 1; i >= 0; i--) {
+        if (row >= arr[i]._row) {
+          return arr[i]
+        }
+      }
+    }
+    for (let i = 1; i < layers.length; i++) {
+      let arr = layers[i]
+      for (let j = 0; j < arr.length; j++) {
+        let item = arr[j]
+        let parent = getParent(layers[i - 1], item._row)
+        if (parent) {
+          parent.children.push(item)
+        }
+      }
+    }
+    bus.emit('setData', layers[0][0])
+    ElMessage.success('导入成功')
+  } catch (error) {
+    console.log(error)
+    ElMessage.error('文件解析失败')
+  }
+}
+/**
+ * 
+ * @Desc: 处理markdown文件
+ */
+const handleMd = async file => {
+  let fileReader = new FileReader()
+  fileReader.readAsText(file.raw)
+  fileReader.onload = async evt => {
+    try {
+      let data = await markdown.transformMarkdownTo(evt.target.result)
+      bus.emit('setData', data)
+      ElMessage({
+        message: '导入成功',
+        type: 'success'
+      })
+    } catch (error) {
+      console.log(error)
+      ElMessage({
+        message: '文件解析失败',
+        type: 'error'
+      })
+    }
+  }
+}
+</script>
+
+<script>
+export default {
+  name: 'Import'
+}
+</script>
+
+<style lang="less" scoped>
+.el-upload__tip {
+  margin: 0 0 0 5px;
+}
+</style>

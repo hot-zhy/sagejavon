@@ -1,0 +1,48 @@
+{"query": "JDK 和 JRE 有什么区别？", "raw_response": {}}
+{"query": "== 和 equals 的区别是什么？", "raw_response": {}}
+{"query": "两个对象的 hashCode() 相同，则 equals() 也一定为 true，对吗？", "raw_response": {}}
+{"query": "final 在 Java 中有什么作用？", "raw_response": {"answer": "在Java中，`final`关键字有多个作用：\n\n1. 修饰类：被`final`修饰的类不能被继承。\n2. 修饰方法：被`final`修饰的方法不能被子类覆盖。\n3. 修饰变量：被`final`修饰的变量（包括成员变量和局部变量）一旦被初始化后，其值就不能被改变。\n\n以下是一个`final`修饰变量的例子：\n```java\npublic class FinalExample {\n    final int value = 10; // 一个被final修饰的成员变量\n    public void changeValue() {\n        // value = 20; // 这行代码会导致编译错误，因为final变量不能被重新赋值\n    }\n}\n```\n\n关于`final`的更多用法，可以参考Java的官方文档或相关教程。", "source": ["https://liaoxuefeng.com/books/java/oop/basic/scope/index.html"]}}
+{"query": "Math.round(-1.5) 等于多少？", "raw_response": {"answer": "Math.round(-1.5) 会将 -1.5 四舍五入到最接近的整数。对于负数，四舍五入的行为是向零的方向舍入。因此，Math.round(-1.5) 的结果是 -1。在Java中，Math.round() 方法使用了四舍五入的规则，这也适用于负数。具体来说，当参数是负数且小数部分大于等于0.5时，结果会向零的方向舍入。", "source": []}}
+{"query": "String 属于基础的数据类型吗？", "raw_response": {"answer": "String 不属于Java的基本数据类型，它是一个类。Java的基本数据类型包括：int, short, long, byte, float, double, char, boolean。String是Java语言中用于表示字符串的类，它位于java.lang包中。在Java中，所有的类都是引用类型。关于String的更多内容，可以在[Java核心类 - 字符串和编码](https://liaoxuefeng.com/books/java/oop/core/string-encoding/index.html)中找到详细信息。", "source": ["https://liaoxuefeng.com/books/java/oop/core/string-encoding/index.html"]}}
+{"query": "Java 中操作字符串都有哪些类？它们之间有什么区别？", "raw_response": {}}
+{"query": "String str=\"i\"与 String str=new String(\"i\")一样吗？", "raw_response": {}}
+{"query": "如何将字符串反转？", "raw_response": {}}
+{"query": "String 类的常用方法都有哪些？", "raw_response": {}}
+{"query": "抽象类必须要有抽象方法吗？", "raw_response": {}}
+{"query": "抽象类能使用 final 修饰吗？", "raw_response": {}}
+{"query": "接口和抽象类有什么区别？", "raw_response": {}}
+{"query": "Java 中 IO 流分为几种？", "raw_response": {}}
+{"query": "BIO、NIO、AIO 有什么区别？", "raw_response": {}}
+{"query": "Files 的常用方法都有哪些？", "raw_response": {}}
+{"query": "Java 容器都有哪些？", "raw_response": {}}
+{"query": "Collection 和 Collections 有什么区别？", "raw_response": {}}
+{"query": "List、Set、Map 之间的区别是什么？", "raw_response": {}}
+{"query": "HashMap 和 Hashtable 有什么区别？", "raw_response": {}}
+{"query": "如何决定使用 HashMap 还是 TreeMap？", "raw_response": {}}
+{"query": "HashMap 的实现原理？", "raw_response": {}}
+{"query": "HashSet 的实现原理？", "raw_response": {}}
+{"query": "ArrayList 和 LinkedList 的区别？", "raw_response": {}}
+{"query": "数组与 List 的转换方式？", "raw_response": {}}
+{"query": "ArrayList 和 Vector 有什么区别？", "raw_response": {}}
+{"query": "Array 和 ArrayList 的区别？", "raw_response": {}}
+{"query": "Queue 中 poll() 和 remove() 区别？", "raw_response": {}}
+{"query": "哪些集合类是线程安全的？", "raw_response": {}}
+{"query": "Iterator 是什么？", "raw_response": {}}
+{"query": "Iterator 怎么使用？", "raw_response": {}}
+{"query": "Iterator 和 ListIterator 区别？", "raw_response": {}}
+{"query": "并行和并发有什么区别？", "raw_response": {"answer": "并行（Parallelism）和并发（Concurrency）是两个常被提及的概念，它们在计算机科学中有着不同的含义：\n\n- **并行**指的是在同一时刻，多个处理器或多核处理器上同时处理多个任务。这意味着物理上多个处理器或者处理器核心同时工作，各自处理一部分任务。\n\n- **并发**指的是一个系统能够处理多个任务，这些任务在宏观上看起来是同时进行的，但在单核处理器上实际上是分时进行的，通过操作系统的任务调度策略来实现多个任务共享处理器时间。\n\n简单来说，并行关注的是物理上的同时执行，而并发关注的是逻辑上的同时执行。在Java中，并行和并发可以通过多线程、线程池等技术来实现和管理。\n\n由于提供的文档中没有直接涉及并行和并发的定义和区别，因此无法引用具体的文档内容作为信息来源。", "source": []}}
+{"query": "线程和进程的区别？", "raw_response": {}}
+{"query": "守护线程是什么？", "raw_response": {}}
+{"query": "创建线程的方式？", "raw_response": {}}
+{"query": "Runnable 和 Callable 区别？", "raw_response": {}}
+{"query": "线程状态有哪些？", "raw_response": {"answer": "Java中的线程状态有以下几种：\n\n- **新建状态（New）**：当创建了一个线程后，它就处于这个状态。\n- **就绪状态（Runnable）**：线程具备运行条件，等待被线程调度器选中获取CPU的执行权。\n- **运行状态（Running）**：线程获取CPU权限进行执行任务。\n- **阻塞状态（Blocked）**：线程因为等待某些资源或者因为同步锁而被阻塞。\n- **等待状态（Waiting）**：线程等待其他线程执行特定操作（如通知）。\n- **超时等待状态（Timed Waiting）**：线程等待其他线程执行特定操作，但是等待时间有限。\n- **终止状态（Terminated）**：线程执行结束后的状态。\n\n以上是Java线程的基本状态及其转换关系。", "source": []}}
+{"query": "sleep() 和 wait() 区别？", "raw_response": {}}
+{"query": "notify() 和 notifyAll() 区别？", "raw_response": {}}
+{"query": "run() 和 start() 区别？", "raw_response": {}}
+{"query": "线程池创建方式？", "raw_response": {"answer": "在Java中，创建线程池有多种方式。最常用的方式是使用`Executors`类提供的工厂方法。例如，可以使用`Executors.newFixedThreadPool(int nThreads)`创建一个固定大小的线程池，其中`nThreads`参数指定了线程池中的线程数量。此外，还可以使用`Executors.newCachedThreadPool()`创建一个可缓存线程池，这种线程池会根据需要创建新线程，并在空闲时回收旧线程。另外，`Executors.newSingleThreadExecutor()`可以创建一个单线程的线程池，确保所有任务都在同一个线程中按顺序执行。这些方法都封装了线程池的创建细节，使得开发者可以更方便地使用线程池来执行任务。", "source": ["https://liaoxuefeng.com/books/java/threading/pool/index.html"]}}
+{"query": "线程池状态有哪些？", "raw_response": {}}
+{"query": "submit() 和 execute() 区别？", "raw_response": {}}
+{"query": "如何保证多线程安全？", "raw_response": {}}
+{"query": "多线程锁的升级机制？", "raw_response": {}}
+{"query": "什么是死锁？", "raw_response": {}}
+{"query": "如何避免死锁？", "raw_response": {"answer": "为了避免死锁，线程获取锁的顺序要一致。也就是说，所有线程在获取多个锁时，应该按照相同的顺序来获取这些锁。例如，如果线程1先获取锁A，然后获取锁B，那么线程2也应该先获取锁A，再获取锁B。这样可以避免不同线程因为持有不同的锁而互相等待，从而避免死锁的发生。", "source": ["https://liaoxuefeng.com/books/java/threading/synchronize/dead-lock/index.html"]}}

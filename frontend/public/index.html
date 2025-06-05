@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= encodeURIComponent(BASE_URL) %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <!-- 修改CSS和JS的引用路径 -->
+  <link type="text/css" rel="stylesheet" href="<%= encodeURIComponent(BASE_URL) %>jsmind/style/jsmind.css" />
+  <script type="text/javascript" src="<%= encodeURIComponent(BASE_URL) %>jsmind/js/jsmind.js"></script>
+  <script type="text/javascript" src="<%= encodeURIComponent(BASE_URL) %>jsmind/js/jsmind.draggable.js"></script>
+  <script type="text/javascript" src="<%= encodeURIComponent(BASE_URL) %>jsmind/js/jsmind.screenshot.js"></script>
+  
+  <!-- 添加jsMind的CSS引用 -->
+  <link rel="stylesheet" href="<%= encodeURIComponent(BASE_URL) %>jsmind/css/jsmind.css">
+</head>
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  
+  <!-- Vue应用挂载点 -->
+  <div id="app"></div>
+  
+  <!-- 在body结束标签前引入jsMind相关脚本 -->
+  <!-- 注意：由于Vue CLI的webpack配置会自动注入编译后的JS文件，我们只需添加额外的jsMind脚本 -->
+  <!-- 删除原有的script标签，使用自动生成的BASE_URL -->
+  
+  <!-- 注意：无需手动指定Vue应用的打包入口文件，Vue CLI会自动处理 -->
+  <!-- built files will be auto injected -->
+
+  <!-- 在 TypeScript 中使用 jsMind -->
+  <script lang="ts">
+    // 你可以在这里编写 TypeScript 代码，使用 jsMind 库
+    // 比如创建一个 mindmap 实例
+    const mind = new jsMind({
+      // 设置选项
+    });
+  </script>
+</body>
+</html>
