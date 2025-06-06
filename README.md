@@ -82,22 +82,61 @@ server/app/model-1/
 ------
 
 ## 🧪 System Modules with Screenshots 
+![image](https://github.com/user-attachments/assets/53cfa4a0-96b3-45bc-b683-c613b2692e47)
+![image](https://github.com/user-attachments/assets/26bfab58-03ec-49fd-a3bc-c08a5df06119)
+
 
 ### Learn
 
 - AI-powered concept explanation and guided learning
 
+· knowledge Q&A with RAG
+![image](https://github.com/user-attachments/assets/f9a750fc-9130-42f2-b8e0-01b5536851eb)
+
+
+· RAG backend
+![image](https://github.com/user-attachments/assets/4017b398-4188-4b42-b042-a70bb22ad620)
+![image](https://github.com/user-attachments/assets/8268e24f-893c-4089-80eb-92ac07d68520)
+
+
+· programming tutor
+![image](https://github.com/user-attachments/assets/3c933b0e-e891-4845-a5cf-7e2f62ca8ef4)
+
+
+
 ### Practice Module
 
-- Auto-generated Java coding tasks and interactive feedback
+· practice statistics and daily recommendation exercises
+![image](https://github.com/user-attachments/assets/1323157f-a16f-4089-8eca-f974b7472026)
+
+· choice exercises
+![image](https://github.com/user-attachments/assets/3377bb19-7b6d-4041-99de-e9baec14de7a)
+
+· programming exercises
+![image](https://github.com/user-attachments/assets/76a7ca49-c103-4729-a9aa-18170e889e6e)
 
 ### Evaluate Module
 
 - Code correctness, efficiency, and knowledge mastery evaluation
 
+- Auto-generated Java coding tasks and interactive feedback
+
+· code exercise and evaluation result
+![image](https://github.com/user-attachments/assets/8398a786-2485-4b43-af5a-08bcdf2cebf3)
+
+· evaluation result
+![image](https://github.com/user-attachments/assets/59d244af-ce11-4fd0-b771-67b95f4794c8)
+![image](https://github.com/user-attachments/assets/a7e1a762-d356-4d68-8c3b-d9f6141dd1f6)
+
+
 ### Support Module
 
-- Personalized guidance and resource recommendation based on GIKT and user profiles
+· student's personal knowledge graph and his/her learning report(suggesstions and learning path)
+![image](https://github.com/user-attachments/assets/5301457a-876d-4a8e-a752-7021102606d1)
+
+
+· learning report downloaded:
+![image](https://github.com/user-attachments/assets/2402165d-f99b-4867-a98a-d265462dfc4c)
 
 ------
 
