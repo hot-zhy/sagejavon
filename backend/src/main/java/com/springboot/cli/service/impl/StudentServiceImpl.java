@@ -1,22 +1,31 @@
 package com.springboot.cli.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.springboot.cli.common.AppProperties;
+import com.springboot.cli.common.constants.KnowledgeGraphConstants;
 import com.springboot.cli.common.enums.OpExceptionEnum;
 import com.springboot.cli.common.exception.OpException;
 import com.springboot.cli.common.jwt.AuthStorage;
 import com.springboot.cli.common.utils.JwtUtil;
+import com.springboot.cli.model.DO.KnowledgeEdgesDO;
+import com.springboot.cli.model.DO.KnowledgeNodesDO;
 import com.springboot.cli.model.DO.StudentDO;
+import com.springboot.cli.model.VO.StudentKnowledgeGraphVO;
 import com.springboot.cli.model.VO.StudentVO;
+import com.springboot.cli.repository.impl.KnowledgeEdgesRepository;
+import com.springboot.cli.repository.impl.KnowledgeNodesRepository;
 import com.springboot.cli.repository.impl.StudentRepository;
 import com.springboot.cli.service.StudentService;
+import org.apache.tomcat.jni.Local;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.*;
 
 @Service
@@ -24,6 +33,10 @@ public class StudentServiceImpl implements StudentService {
 
     @Resource
     StudentRepository studentRepository;
+    @Resource
+    KnowledgeEdgesRepository knowledgeEdgesRepository;
+    @Resource
+    KnowledgeNodesRepository knowledgeNodesRepository;
     @Autowired
     private AppProperties appProperties;
 
@@ -80,7 +93,53 @@ public class StudentServiceImpl implements StudentService {
         studentDO.setId(UUID.randomUUID().toString().substring(0,23));  //随机id,保留前24位
         studentDO.setPassword(newPassword);  // 密码进行加密处理
         studentRepository.save(studentDO);
+
+        // 👇 初始化知识图谱
+        String studentId = studentDO.getId();
+        initKnowledgeGraphForStudent(studentId);
     }
+
+    // 7. 初始化方法调用
+    // 7. 初始化方法调用
+    public void initKnowledgeGraphForStudent(String studentId) {
+        // 初始化节点
+        List<KnowledgeNodesDO> nodes = KnowledgeGraphConstants.DEFAULT_NODES.stream()
+                .map(node -> {
+                    KnowledgeNodesDO n = new KnowledgeNodesDO();
+                    n.setStudentId(studentId);
+                    n.setNodeId(String.valueOf(node.getId()));  // 知识点ID（图谱中的逻辑ID）
+                    n.setText(node.getText());
+                    n.setWidth(0);  // 初始化宽高为 0
+                    n.setHeight(0);
+                    n.setCreateTime(LocalDateTime.now());
+                    n.setUpdateTime(LocalDateTime.now());
+                    return n;
+                })
+                .toList();
+
+        // 初始化边
+        List<KnowledgeEdgesDO> edges = KnowledgeGraphConstants.DEFAULT_EDGES.stream()
+                .map(edge -> {
+                    KnowledgeEdgesDO e = new KnowledgeEdgesDO();
+                    e.setStudentId(studentId);
+                    e.setFromNodeId(edge.getFromNodeId()); // 起点逻辑ID
+                    e.setToNodeId(edge.getToNodeId());     // 终点逻辑ID
+                    e.setLabel(edge.getLabel());      // 连线标签
+                    e.setCreateTime(LocalDateTime.now());
+                    e.setUpdateTime(LocalDateTime.now());
+                    return e;
+                })
+                .toList();
+
+        // 批量保存
+        knowledgeNodesRepository.saveBatch(nodes);
+        knowledgeEdgesRepository.saveBatch(edges);
+    }
+
+
+
+
+
 
     @Override
     public StudentVO login(StudentDO studentDO) {
@@ -101,4 +160,29 @@ public class StudentServiceImpl implements StudentService {
 
         return StudentVO.builder().id(student.getId()).token(token).build();
     }
+
+    @Override
+    public StudentKnowledgeGraphVO getPersonalGraph(StudentDO studentDO) {
+        String studentId = studentDO.getId().toString();
+
+        // 查询该学生的所有节点
+        LambdaQueryWrapper<KnowledgeNodesDO> nodeWrapper = new LambdaQueryWrapper<>();
+        nodeWrapper.eq(KnowledgeNodesDO::getStudentId, studentId);
+        List<KnowledgeNodesDO> nodes = knowledgeNodesRepository.list(nodeWrapper);
+
+        // 查询该学生的所有边
+        LambdaQueryWrapper<KnowledgeEdgesDO> edgeWrapper = new LambdaQueryWrapper<>();
+        edgeWrapper.eq(KnowledgeEdgesDO::getStudentId, studentId);
+        List<KnowledgeEdgesDO> edges = knowledgeEdgesRepository.list(edgeWrapper);
+
+        // 封装 VO 返回
+        StudentKnowledgeGraphVO vo = new StudentKnowledgeGraphVO();
+        vo.setStudentId(studentId);
+        vo.setNodes(nodes);
+        vo.setEdges(edges);
+
+        return vo;
+    }
+
+
 }

@@ -1,6 +1,7 @@
 package com.springboot.cli.service;
 
 import com.springboot.cli.model.DO.StudentDO;
+import com.springboot.cli.model.VO.StudentKnowledgeGraphVO;
 import com.springboot.cli.model.VO.StudentVO;
 
 public interface StudentService {
@@ -11,4 +12,6 @@ public interface StudentService {
     void registerStu(StudentDO student);
 
     StudentVO login(StudentDO studentDO);
+
+    StudentKnowledgeGraphVO getPersonalGraph(StudentDO studentDO);
 }
