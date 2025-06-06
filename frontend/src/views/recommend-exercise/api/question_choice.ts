@@ -24,7 +24,7 @@ function questionChoice(query: Request): Promise<AxiosResponse> {
 
   const config = {
     method: 'get',
-    url: `https://api.xhpolaris.com/sagejavon/question/list?${params}`,
+    url: `http://localhost:8080/question/list?${params}`,
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',

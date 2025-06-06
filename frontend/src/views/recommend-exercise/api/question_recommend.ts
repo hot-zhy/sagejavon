@@ -15,7 +15,7 @@ function questionRecommend(num: string): Promise<AxiosResponse> {
 
   const config = {
     method: 'get',
-    url: `https://api.xhpolaris.com/sagejavon/question/recommend?${params}`,
+    url: `http://localhost:8080/question/recommend?${params}`,
     headers: {
       'Content-Type': 'application/json',
       'token': localStorage.getItem('user-token') || '',

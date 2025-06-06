@@ -16,7 +16,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import javax.annotation.Resource;
-import java.util.UUID;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -59,20 +60,20 @@ public class StudentServiceImpl implements StudentService {
             throw new OpException(OpExceptionEnum.NICKNAME_ERROR);
         }
         //2. 用户名长度检查
-        if(studentDO.getNickname().length()>10){
+        if(studentDO.getNickname() != null && studentDO.getNickname().length()>10){
             throw new OpException(OpExceptionEnum.NICKNAME_LEN_ERROR);
         }
 
         String password = studentDO.getPassword();
         // 2. 密码长度检查
-        if (password.length() < 6 || password.length() > 20) {
-            throw new OpException(OpExceptionEnum.PASSWORD_LEN_ERROR);
-        }
+//        if (password.length() < 6 || password.length() > 20) {
+//            throw new OpException(OpExceptionEnum.PASSWORD_LEN_ERROR);
+//        }
 
         // 3. 密码必须包含字母和数字
-        if (!password.matches(".*[a-zA-Z].*") || !password.matches(".*\\d.*")) {
-            throw new OpException(OpExceptionEnum.PASSWORD_TYPE_ERROR);
-        }
+//        if (!password.matches(".*[a-zA-Z].*") || !password.matches(".*\\d.*")) {
+//            throw new OpException(OpExceptionEnum.PASSWORD_TYPE_ERROR);
+//        }
 
         // 4. 创建用户
         String newPassword = DigestUtils.md5DigestAsHex(password.getBytes());
@@ -93,8 +94,11 @@ public class StudentServiceImpl implements StudentService {
         if(!student.getPassword().equals(DigestUtils.md5DigestAsHex(studentDO.getPassword().getBytes()))){
             throw new OpException(OpExceptionEnum.PASSWORD_ERROR);
         }
-        //用户登陆成功，生成jwt令牌
-        String token = JwtUtil.getToken(student,appProperties.getTtl(),appProperties.getPublicKey());
+        // 用户登录成功，生成jwt令牌
+        Map<String, Object> claims = new HashMap<>();
+        claims.put("userId", student.getId());
+        String token = JwtUtil.createJWT(appProperties.getPublicKey(), appProperties.getTtl(), claims);
+
         return StudentVO.builder().id(student.getId()).token(token).build();
     }
 }

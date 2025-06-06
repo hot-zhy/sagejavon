@@ -6,38 +6,52 @@
         <span class="title">SageJavon</span>
       </div>
       <div class="nav">
-        <div class="navItem" @click="jumpTop" :class="{
-          active: activeTab === 'home'
-        }">
-          首页
+        <div class="navItem" @click="jumpTop" :class="{ active: activeTab === 'home' }">
+          {{ t('home') }}
         </div>
-        <div class="navItem" @click="useOnline">在线使用</div>
-        <div class="navItem" @click="jumpClient" :class="{
-          active: activeTab === 'client'
-        }">
-          客户端
+        <div class="navItem" @click="useOnline">
+          {{ t('online') }}
         </div>
-        <div class="navItem" @click="jumpHelp">使用文档</div>
+        <div class="navItem" @click="jumpClient" :class="{ active: activeTab === 'client' }">
+          {{ t('client') }}
+        </div>
+        <div class="navItem" @click="jumpHelp">
+          {{ t('help') }}
+        </div>
         <div class="navItem" @click="goToGitHub">
-          Github
+          {{ t('github') }}
         </div>
-      </div>
-      <div class="simple-nav">
-        
+        <!-- 🌐 语言切换按钮 -->
+        <div class="navItem" @click="toggleLang">
+          {{ currentLocale === 'zh-CN' ? 'EN' : '中' }}
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import goToGitHub from './api/goToGitHub';
+import i18n, { t as globalT, setLocale } from '@/locales'
+import goToGitHub from './api/goToGitHub'
+import { useAppStoreWithOut } from '@/store/modules/app' // 可选同步到 store
 
+const t = globalT
 const router = useRouter()
 const active = ref(false)
 const activeTab = ref('home')
-const clientEl = ref(null)
+const clientEl = ref<HTMLElement | null>(null)
+
+const currentLocale = ref(i18n.global.locale.value)
+const appStore = useAppStoreWithOut() // 可选
+
+const toggleLang = () => {
+  const newLocale = currentLocale.value === 'zh-CN' ? 'en-US' : 'zh-CN'
+  currentLocale.value = newLocale
+  setLocale(newLocale)
+  appStore.setLanguage?.(newLocale) // ✅ 可选：更新 Pinia 中的语言状态
+}
 
 onMounted(() => {
   window.addEventListener('scroll', onScroll)
@@ -50,8 +64,11 @@ onUnmounted(() => {
 
 const onScroll = () => {
   active.value = window.scrollY > 0
-  let offsetTop = clientEl.value.offsetTop
-  if (window.scrollY + window.innerHeight >= offsetTop && window.scrollY <= offsetTop + clientEl.value.offsetHeight) {
+  const offsetTop = clientEl.value?.offsetTop ?? 0
+  if (
+    window.scrollY + window.innerHeight >= offsetTop &&
+    window.scrollY <= offsetTop + (clientEl.value?.offsetHeight ?? 0)
+  ) {
     activeTab.value = 'client'
   } else {
     activeTab.value = 'home'
@@ -63,11 +80,7 @@ const useOnline = () => {
 }
 
 const jumpHelp = () => {
-  router.push('/help/zh/')
-}
-
-const jumpDoc = () => {
-  router.push('/doc/zh/')
+  router.push('/help/zh/') // 可根据 currentLocale 动态拼路径
 }
 
 const jumpTop = () => {
@@ -75,7 +88,9 @@ const jumpTop = () => {
 }
 
 const jumpClient = () => {
-  window.scrollTo(0, clientEl.value.offsetTop - 76)
+  if (clientEl.value) {
+    window.scrollTo(0, clientEl.value.offsetTop - 76)
+  }
 }
 </script>
 

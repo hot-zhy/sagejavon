@@ -14,6 +14,7 @@ import { useBasicLayout } from "@/hooks/useBasicLayout";
 import defaultModel from "@/assets/sagejavon.png";
 import { newChat } from "@/views/chat/api/new_chat";
 import icon from "../icon/index";
+import { t } from '@/locales'
 
 const router = useRouter();
 const appStore = useAppStore();
@@ -120,9 +121,9 @@ function handleAdd() {
   newChat()
     .then((res) => {
       if (res.status === 200) {
-        message.info("新增成功", { duration: 5000 });
+        message.info(t('addSuccess'), { duration: 5000 });
         chatStore.addHistory({
-          title: "知识问答" + res.data.data,
+          title: t('qaTitle') + res.data.data,
           uuid: res.data.data,
           isEdit: false,
         });
@@ -143,6 +144,19 @@ function handleAdd() {
 function handleUpdateCollapsed() {
   appStore.setSiderCollapsed(!collapsed.value);
 }
+import i18n, { t as globalT, setLocale } from '@/locales'
+
+const t = globalT
+
+const currentLocale = ref(i18n.global.locale.value)
+
+const toggleLanguage = () => {
+  const newLocale = currentLocale.value === 'zh-CN' ? 'en-US' : 'zh-CN'
+  currentLocale.value = newLocale
+  setLocale(newLocale)
+  appStore.setLanguage?.(newLocale) // ✅ 可选：更新 Pinia 中的语言状态
+}
+
 
 const getMobileClass = computed<CSSProperties>(() => {
   if (isMobile.value) {
@@ -192,19 +206,23 @@ watch(
             <div class="side-content">
               <div class="side-item" @click="goToKnowledgeGraph">
                 <img :src="sidebarIcons[0]" />
-                <text :class="{ activeText: myIcons.activeIndex.value === 0 }">知识图谱</text>
+                <text :class="{ activeText: myIcons.activeIndex.value === 0 }">{{ t('knowledgeGraph') }}</text>
               </div>
               <div class="side-item" @click="chat">
                 <img :src="sidebarIcons[1]" />
-                <text :class="{ activeText: myIcons.activeIndex.value === 1 }">知识问答</text>
+                <text :class="{ activeText: myIcons.activeIndex.value === 1 }">{{ t('knowledgeQA') }}</text>
               </div>
               <div class="side-item" @click="goToProgram">
                 <img :src="sidebarIcons[2]" />
-                <text :class="{ activeText: myIcons.activeIndex.value === 2 }">编程导师</text>
+                <text :class="{ activeText: myIcons.activeIndex.value === 2 }">{{ t('programmingTutor') }}</text>
               </div>
               <div class="side-item" @click="goTopersonStudy">
                 <img :src="sidebarIcons[3]" />
-                <text :class="{ activeText: myIcons.activeIndex.value === 3 }">个性学习</text>
+                <text :class="{ activeText: myIcons.activeIndex.value === 3 }">{{ t('personalStudy') }}</text>
+              </div>
+              <div class="side-item" @click="toggleLanguage">
+                🌐
+                <text>{{ t('switchLanguage') }}</text>
               </div>
             </div>
           </div>
@@ -225,7 +243,7 @@ watch(
     <NLayoutSider v-if="show" :collapsed-width="0" :width="200" collapse-mode="transform"
       :show-trigger="isMobile ? false : 'arrow-circle'" bordered :style="getMobileClass">
       <div class="chat-history-container" :style="mobileSafeArea">
-        <button class="add-chat-btn" @click="handleAdd">新增提问</button>
+        <button class="add-chat-btn" @click="handleAdd">{{ t('addQuestion') }}</button>
         <div>
           <List />
         </div>
@@ -275,7 +293,7 @@ watch(
       row-gap: 8px;
       cursor: pointer;
       border-radius: 6px;
-      padding: 4px 6px;
+      padding: 4px 10px;
       transition: var(--background-transition-animation);
 
       &:hover {
@@ -288,7 +306,7 @@ watch(
       }
 
       text {
-        font-size: 13px;
+        font-size: 10px;
         line-height: 1.5;
         color: var(--second-text-color);
       }

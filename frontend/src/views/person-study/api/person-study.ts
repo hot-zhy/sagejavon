@@ -26,7 +26,7 @@ const token = localStorage.getItem('user-token') || 'eyJhbGciOiJFUzI1NiIsInR5cCI
 export function fetchPersonStudy(): Promise<PersonStudyData> {
   const config = {
     method: 'get',
-    url: 'https://api.xhpolaris.com/sagejavon/homepage',
+    url: 'http://localhost:8080/homepage',
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',

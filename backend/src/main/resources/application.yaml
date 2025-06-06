@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: sage-javon-backend
+
+  profiles:
+    active: dev
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql.mysql:3306/sage_javon?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: pYRGObpCdG
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+app:
+  publicKey: "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPWpl36StEUn9y3hZgS3aW4SjJmc/8e2rqTjC5WcBaLD6KOcW1iyUpB3+C3stzP06fQbx6YbhEtZn08nLyJcBUw=="
+  ttl: 1209599000  # 单位为毫秒
+  token-name: token

@@ -1,7 +1,7 @@
 import type { AxiosError, AxiosResponse } from 'axios';
 import axios from 'axios';
 
-const API_BASE_URL = `https://api.xhpolaris.com/sagejavon/question/review`;
+const API_BASE_URL = `http://localhost:8080/question/review`;
 
 interface ReviewResponse {
   data: number;      // 评价

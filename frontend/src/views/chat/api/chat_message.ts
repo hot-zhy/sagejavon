@@ -12,7 +12,7 @@ function chatMessage(params: ChatMessageParams): Promise<AxiosResponse> {
 
   const config = {
     method: 'post',
-    url: `https://api.xhpolaris.com/sagejavon/chat/message?chatId=${chatId}`,
+    url: `http://localhost:8080/chat/message?chatId=${chatId}`,
     headers: {
       'Content-Type': 'application/json',
       'token': localStorage.getItem('user-token') || '',

@@ -121,7 +121,7 @@ async function onConversation() {
 
   addChat(+localStorage.getItem("active-uuid"), {
     dateTime: new Date().toLocaleString(),
-    text: "SageJavon思考中....",
+    text: "SageJavon is thinking....",
     loading: true,
     inversion: false,
     error: false,

@@ -4,7 +4,7 @@ function getUserInfo() {
   console.log(localStorage.getItem('user-token'))
   const config = {
     method: 'get',
-    url: 'https://api.xhpolaris.com/sagejavon/student/information',
+    url: 'http://localhost:8080/information',
     headers: {
       'Content-Type': 'application/json',
       'token': localStorage.getItem('user-token'),

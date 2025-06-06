@@ -375,6 +375,12 @@ onMounted(() => {
 onUnmounted(() => {
   if (loading.value) controller.abort();
 });
+
+
+import { t as globalT } from '@/locales'
+
+const t = globalT
+
 </script>
 
 <template>
@@ -465,7 +471,7 @@ onUnmounted(() => {
               ref="inputRef"
               v-model:value="prompt"
               type="textarea"
-              placeholder="我是你的编程小导师~帮你逐步解决复杂的编程问题，并为你推荐一些合适的编程题目，可以把题目发给我，也可以附上你的代码，让我们共同分析对错~"
+              :placeholder="t('inputPlaceholder')"
               :autosize="{ minRows: 1, maxRows: isMobile ? 4 : 8 }"
               @input="handleInput"
               @focus="handleFocus"

@@ -10,7 +10,7 @@ function codeRecordDetail(query: number): Promise<AxiosResponse> {
 
   const config = {
     method: 'get',
-    url: `https://api.xhpolaris.com/sagejavon/question/code/record/detail?recordId=${query}`,
+    url: `http://localhost:8080/question/code/record/detail?recordId=${query}`,
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',

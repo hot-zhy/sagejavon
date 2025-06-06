@@ -37,7 +37,7 @@ function questionCode(query: Request): Promise<AxiosResponse> {
 
   const config = {
     method: 'post',
-    url: `https://api.xhpolaris.com/sagejavon/question/code?${params.toString()}`,
+    url: `http://localhost:8080/question/code?${params.toString()}`,
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',

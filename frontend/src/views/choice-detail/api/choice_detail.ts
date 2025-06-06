@@ -10,7 +10,7 @@ function choiceDetails(query: number): Promise<AxiosResponse> {
 
   const config = {
     method: 'get',
-    url: `https://api.xhpolaris.com/sagejavon//question/select/detail?id=${query}`,
+    url: `http://localhost:8080//question/select/detail?id=${query}`,
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',

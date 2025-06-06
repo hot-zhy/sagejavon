@@ -7,13 +7,13 @@ import zhTW from './zh-TW'
 import ruRU from './ru-RU'
 import { useAppStoreWithOut } from '@/store/modules/app'
 import type { Language } from '@/store/modules/app/helper'
-
+const STORAGE_KEY = 'app-language'
+const savedLocale = localStorage.getItem(STORAGE_KEY) || 'en-US'
 const appStore = useAppStoreWithOut()
-
-const defaultLocale = appStore.language || 'zh-CN'
+appStore.setLanguage(savedLocale as Language) // 同步 Vuex 状态
 
 const i18n = createI18n({
-  locale: defaultLocale,
+  locale: savedLocale,
   fallbackLocale: 'en-US',
   allowComposition: true,
   messages: {
@@ -25,10 +25,12 @@ const i18n = createI18n({
   },
 })
 
+
 export const t = i18n.global.t
 
 export function setLocale(locale: Language) {
-  i18n.global.locale = locale
+  i18n.global.locale.value = locale
+  localStorage.setItem(STORAGE_KEY, locale) // ✅ 语言切换时保存
 }
 
 export function setupI18n(app: App) {

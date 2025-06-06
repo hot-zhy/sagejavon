@@ -9,14 +9,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
 
-/**
- * 拦截器
- *
- */
 @Slf4j
 @Component
 public class AuthInterceptor implements HandlerInterceptor {
@@ -29,24 +27,54 @@ public class AuthInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String token = request.getHeader(AuthStorage.TOKEN_KEY);
-//        if (StringUtils.hasText(token) && token.startsWith("Berry ")) {
-//            token = token.substring(6);
-//        }
-//        else token = null;
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            response.setStatus(HttpServletResponse.SC_OK);
+            return true;
+        }
+
+        System.out.println("请求路径：" + request.getRequestURI());
+
+        String token = request.getHeader(AuthStorage.TOKEN_KEY);  // 获取请求头中的 token
+        System.out.println("接收到的 token: " + token);
+
+        if (StringUtils.hasLength(token) && token.startsWith("Bearer ")) {
+            token = token.substring(7); // 去掉 Bearer 前缀
+        }
+
         if (StringUtils.hasLength(token)) {
-            UserMeta tokens = TokenProvider.decodeToken(token, appProperties.getPublicKey());
-            JwtUser jwtUser = new JwtUser().setUserId(tokens.getUserId()).setValid(true);
-            // 是否认证通过
-            if (StringUtils.hasLength(jwtUser.getUserId()) && jwtUser.isValid()) {
-                // 保存授权信息
-                AuthStorage.setUser(token, jwtUser);
-                return true;
+            try {
+                // 解码 token 并从中提取 userId 和 name
+                Map<String, Object> tokenData = TokenProvider.decodeTokenToMap(token, appProperties.getPublicKey());
+                System.out.println("token 解码内容: " + tokenData);
+
+                String userId = (String) tokenData.get("userId");
+
+                System.out.println("setUser in thread " + Thread.currentThread().getName() + " = " + userId);
+
+                if (StringUtils.hasLength(userId)) {
+                    JwtUser jwtUser = new JwtUser().setUserId(userId).setValid(true);
+                    AuthStorage.setUser(token, jwtUser);
+                    return true;  // 认证成功
+                } else {
+                    System.out.println("token 中缺少 userId");
+                }
+
+            } catch (Exception e) {
+                System.out.println("token 解码失败：" + e.getMessage());
             }
         }
-        response.setContentType("text/html;charset=utf-8");
-        response.getWriter().write("请先登录！");
+
+        // 如果 token 无效或没有提供，返回认证失败
+        response.setContentType("application/json;charset=utf-8");
+        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);  // 设置 401 状态码
+        response.getWriter().write("{\"code\":401,\"msg\":\"请先登录或提供有效 token！\"}");
         return false;
+    }
+
+
+    @Override
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+        HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);
     }
 
     @Override

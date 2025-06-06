@@ -21,7 +21,7 @@ const token = localStorage.getItem('user-token') || 'eyJhbGciOiJFUzI1NiIsInR5cCI
 function knowledgePoint(query: string): Promise<KnowledgeItem[]> {
   const config = {
     method: 'get',
-    url: 'https://api.xhpolaris.com/sagejavon/question/knowledge',
+    url: 'http://localhost:8080/question/knowledge',
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',

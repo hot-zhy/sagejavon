@@ -4,7 +4,7 @@ async function postKnowledge(nodes) {
   const token = localStorage.getItem('user-token');
   const config = {
     method: 'post',
-    url: 'https://api.xhpolaris.com/sagejavon/knowledge',
+    url: 'http://localhost:8080/knowledge',
     headers: {
       'Content-Type': 'application/json',
       'token': token,

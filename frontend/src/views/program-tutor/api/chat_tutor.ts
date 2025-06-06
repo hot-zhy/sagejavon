@@ -12,7 +12,7 @@ function chatTutor(params: ChatMessageParams): Promise<AxiosResponse> {
 
   const config = {
     method: 'post',
-    url: `https://api.xhpolaris.com/sagejavon/chat/tutor?chatId=${chatId}`,
+    url: `http://localhost:8080/chat/tutor?chatId=${chatId}`,
     headers: {
       'Content-Type': 'application/json',
       'token': localStorage.getItem('user-token') || '',

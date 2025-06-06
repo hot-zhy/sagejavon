@@ -4,7 +4,7 @@ async function deleteChat(chatId: number): Promise<AxiosResponse> {
   const token = localStorage.getItem('user-token');
 
   try {
-    const response = await axios.delete(`https://api.xhpolaris.com/sagejavon/chat?chatId=${chatId}`, {
+    const response = await axios.delete(`http://localhost:8080/chat?chatId=${chatId}`, {
       headers: {
         'token': token,
         'Content-Type': 'application/json', // 可选，如果服务端要求

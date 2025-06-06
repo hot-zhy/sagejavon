@@ -17,7 +17,7 @@ function updateUserInfoAPI(userInfo: UserInfo): Promise<AxiosResponse> {
 
   const config = {
     method: 'post',
-    url: 'https://api.xhpolaris.com/sagejavon/student/information',
+    url: 'http://localhost:8080/information',
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',

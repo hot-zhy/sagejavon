@@ -1,22 +1,13 @@
 package com.springboot.cli.common.jwt;
 
-
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.algorithms.Algorithm;
-import com.auth0.jwt.interfaces.DecodedJWT;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-
-import java.security.KeyFactory;
-import java.security.PublicKey;
-import java.security.interfaces.ECPublicKey;
-import java.security.spec.X509EncodedKeySpec;
-import java.util.Base64;
-
-import com.google.gson.GsonBuilder;
-import com.xhpolaris.idlgen.basic.UserMeta;
-import com.google.protobuf.util.JsonFormat;
 import org.springframework.stereotype.Component;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * description token管理
@@ -26,44 +17,20 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class TokenProvider {
 
-    public static UserMeta decodeToken(String rememberMeToken, String publicKeys) {
-        byte[] publicKeyBytes = parsePublicKeyString(publicKeys);
-
-        // 转换为公钥对象
+    // 解析 token 并返回一个 Map，其中包含 token 中的所有信息
+    public static Map<String, Object> decodeTokenToMap(String token, String publicKey) {
         try {
-            KeyFactory keyFactory = KeyFactory.getInstance("EC");
-            X509EncodedKeySpec keySpec = new X509EncodedKeySpec(publicKeyBytes);
-            PublicKey publicKey  = keyFactory.generatePublic(keySpec);
-
-            // 验证 JWT
-            DecodedJWT decodedJWT = JWT.require(Algorithm.ECDSA256((ECPublicKey) publicKey, null))
-                    .build()
-                    .verify(rememberMeToken);
-            log.info("JWT verification successful!");
-            String string = new String(Base64.getDecoder().decode(decodedJWT.getPayload()));
-            fromJson(string, UserMeta.class);
-
-            UserMeta.Builder builder = UserMeta.newBuilder();
-            JsonFormat.parser().ignoringUnknownFields().merge(string, builder);
-
-            return builder.build();
+            Claims claims = Jwts.parser()
+                    // 设置签名的秘钥
+                    .setSigningKey(publicKey.getBytes(StandardCharsets.UTF_8))
+                    // 设置需要解析的jwt
+                    .parseClaimsJws(token).getBody();
+            Map<String, Object> data = new HashMap<>();
+            data.put("userId", claims.get("userId", String.class));
+            data.put("name", claims.get("name", String.class));
+            return data;
         } catch (Exception e) {
-            return null;
+            throw new RuntimeException("Error decoding token", e);
         }
-    }
-
-    private static byte[] parsePublicKeyString(String publicKeyString) {
-        // 去除开头和结尾的标记，并移除换行符
-        String base64PublicKey = publicKeyString
-                .replace("-----BEGIN PUBLIC KEY-----", "")
-                .replace("-----END PUBLIC KEY-----", "")
-                .replaceAll("\\s", "");
-
-        // 将 Base64 编码的字符串解码为字节数组
-        return Base64.getDecoder().decode(base64PublicKey);
-    }
-
-    public static <T> T fromJson(String json, Class<T> clazz) {
-        return new GsonBuilder().create().fromJson(json, clazz);
     }
 }

@@ -5,7 +5,7 @@ function getKnowledge() {
   const userId= localStorage.getItem('user-id');
   const config = {
     method: 'get',
-    url: 'https://api.xhpolaris.com/sagejavon/knowledge?studentId='+userId,
+    url: 'http://localhost:8080/knowledge?studentId='+userId,
     headers: {
       'Content-Type': 'application/json',
       'token': token,

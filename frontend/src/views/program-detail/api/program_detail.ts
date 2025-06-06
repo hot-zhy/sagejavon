@@ -10,7 +10,7 @@ function programDetails(query: number): Promise<AxiosResponse> {
 
   const config = {
     method: 'get',
-    url: `https://api.xhpolaris.com/sagejavon/question/code/detail?id=${query}`,
+    url: `http://localhost:8080/question/code/detail?id=${query}`,
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',

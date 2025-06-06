@@ -10,7 +10,7 @@ function newChat(): Promise<AxiosResponse> {
 
   const config = {
     method: 'post',
-    url: 'https://api.xhpolaris.com/sagejavon/chat',
+    url: 'http://localhost:8080/chat',
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',
