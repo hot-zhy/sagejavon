@@ -1,22 +1,26 @@
+import { t as globalT } from '@/locales';
 <template>
     <div class="daily-container">
         <div class="left-side">
             <img src="../images/daily-recommendation.png" class="icon" />
         </div>
         <div class="text-container">
-            <div class="title">每日推荐</div>
+            <div class="title">{{ t('dailyRecommendation') }}</div>
             <div class="right-side">
                 <ul class="features">
-                    <li>采用AI算法为你量身定制</li>
-                    <li>根据您的学习进度每日自动刷新</li>
-                    <li>快来体验您的专属题单吧</li>
+                    <li>{{ t('aiAlgorithm') }}</li>
+                    <li>{{ t('autoRefresh') }}</li>
+                    <li>{{ t('experienceYourList') }}</li>
                 </ul>
             </div>
         </div>
     </div>
 </template>
 
+
 <script setup lang="ts">
+import {t as globalT} from '@/locales'
+const t = globalT
 </script>
 
 <style scoped>

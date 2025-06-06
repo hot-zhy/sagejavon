@@ -1,6 +1,6 @@
 <template>
   <div class="full-height">
-    <QuestionHover :index="2"/>
+    <QuestionHover :index="2" />
     <PanelBox class="program-detail-container">
       <template #question>
         <div class="sidebar">
@@ -11,7 +11,7 @@
                 @click="activeTab = 'content'"
                 :class="{ active: activeTab === 'content' }"
               >
-                题目内容
+                {{ t('contentTab') }}
               </div>
             </div>
             <div class="circle-flex">
@@ -20,18 +20,9 @@
                 @click="activeTab = 'history'"
                 :class="{ active: activeTab === 'history' }"
               >
-                历史记录
+                {{ t('historyTab') }}
               </div>
             </div>
-            <!-- <div class="circle-flex">
-              <div class="circle"></div>
-              <div
-                @click="activeTab = 'solution'"
-                :class="{ active: activeTab === 'solution' }"
-              >
-                正确题解
-              </div>
-            </div> -->
           </div>
 
           <div class="content">
@@ -57,33 +48,22 @@
               <div v-if="records.length !== 0">
                 <history-list :records="records"></history-list>
               </div>
-              <div v-else>还没有答题记录</div>
-            </div>
-
-            <div v-if="activeTab === 'solution'">
-              <monaco-editor
-                v-model="correct"
-                :language="language"
-                width="100%"
-                height="500px"
-                @editor-mounted="editorMounted"
-              ></monaco-editor>
+              <div v-else>{{ t('noHistoryRecords') }}</div>
             </div>
           </div>
 
-          <!-- 赞/踩按钮 -->
+          <!-- Feedback Buttons -->
           <div class="feedback-buttons">
             <button @click="toggleLike" :class="{ liked: isLiked }" class="feedback-button">
               <span class="icon">👍</span>
-              <span>推荐的题目很有用~</span>
+              <span>{{ t('likeButton') }}</span>
             </button>
             <button @click="toggleDislike" :class="{ disliked: isDisliked }" class="feedback-button">
               <span class="icon">👎</span>
-              <span>不喜欢本道推荐题目</span>
+              <span>{{ t('dislikeButton') }}</span>
             </button>
           </div>
-
-        </div> <!-- 关闭的 .sidebar -->
+        </div>
       </template>
 
       <template #code>
@@ -95,7 +75,7 @@
                 @click="activeTab = 'content'"
                 :class="{ active: activeTab === 'content' }"
               >
-                代码
+                {{ t('submitCode') }}
               </button>
             </div>
           </div>
@@ -114,7 +94,7 @@
             type="primary"
             @click="submitCode"
           >
-            提交代码(大模型评分)
+            {{ t('submitCode') }}
           </NButton>
           <NButton
             v-if="isLoading"
@@ -122,7 +102,7 @@
             type="info"
             disabled
           >
-            正在评分中...
+            {{ t('scoringInProgress') }}
           </NButton>
         </div>
       </template>
@@ -133,13 +113,13 @@
       class="custom-card"
       preset="card"
       :style="bodyStyle"
-      :title="'您的得分为:' + score"
+      :title="'Your Score: ' + score"
       size="huge"
       :bordered="false"
       :segmented="segmented"
     >
-      正确答案：
-      {{ correctAnswer == null ? "暂无" : correctAnswer }}
+      Correct Answer:
+      {{ correctAnswer == null ? "Not Available" : correctAnswer }}
       <v-md-preview :text="suggestion"></v-md-preview>
     </NModal>
   </div>
@@ -161,6 +141,10 @@ import historyList from "@/components/exercise/history-list.vue";
 import { recordList } from "./api/record_list";
 import { reviewQuestion } from './api/question_review';
 import { codeRecordDetail } from "@/components/exercise/api/code_record_detail";
+import { t as globalT} from '@/locales'
+
+const t = globalT
+
 const bodyStyle = ref({
   width: "700px",
 });

@@ -1,19 +1,20 @@
+import { t as globalT } from '@/locales';
 <template>
   <div class="container">
     <div class="question-list">
       <table class="table-class">
-        <!-- 表头 -->
+        <!-- Table Header -->
         <thead>
           <tr>
-            <th>题目编号</th>
-            <th>题目名称</th>
-            <th>知识点</th>
-            <th>状态</th>
-            <th>难度</th>
-            <th>类型</th>
+            <th>{{ t('questionNumber') }}</th>
+            <th>{{ t('questionName') }}</th>
+            <th>{{ t('knowledgePoint') }}</th>
+            <th>{{ t('status') }}</th>
+            <th>{{ t('difficulty') }}</th>
+            <th>{{ t('type') }}</th>
           </tr>
         </thead>
-        <!-- 表格内容 -->
+        <!-- Table Content -->
         <tbody>
           <tr
             v-for="question in questions"
@@ -35,16 +36,12 @@
               <span :class="statusClass(question.done)"></span>
             </td>
             <td
-              :class="[
-                difficultyClass(question.difficulty),
-                'difficulty',
-                'text-ellipsis',
-              ]"
+              :class="[difficultyClass(question.difficulty), 'difficulty', 'text-ellipsis']"
             >
               {{ difficultyKind(question.difficulty) }}
             </td>
             <td>
-              {{ question.type === 0 ? '代码题' : '选择题' }}
+              {{ t(question.type === 0 ? 'codeQuestion' : 'choiceQuestion') }}
             </td>
           </tr>
         </tbody>
@@ -77,6 +74,9 @@ defineProps<{ questions: Question[] }>()
 const statusClass = (status: number) => {
   return status === 1 ? 'status-complete' : 'status-pending'
 }
+
+import {t as globalT} from '@/locales'
+const t = globalT
 
 const difficultyClass = (difficulty: number) => {
   switch (difficulty) {

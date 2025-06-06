@@ -130,7 +130,7 @@ async function onConversation() {
   try {
     // 发起后端请求获取模型响应
     const response = await fetch(
-      "https://rag.xhpolaris.com/open_kf_api/urls/get_program_tutor",
+      "http://127.0.0.1:7000/open_kf_api/urls/get_program_tutor",
       {
         method: "POST",
         headers: {

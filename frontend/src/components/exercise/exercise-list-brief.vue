@@ -4,9 +4,9 @@
 			<table class="table-class">
 				<thead>
 					<tr>
-						<th>题目编号</th>
-						<th>题目名称</th>
-						<th>难度</th>
+						<th>{{ t('questionNumber') }}</th>
+						<th>{{ t('questionName') }}</th>
+						<th>{{ t('difficulty') }}</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -26,7 +26,8 @@
 
 <script lang="ts" setup>
 import { useRouter } from 'vue-router';
-
+import {t as globalT} from '@/locales'
+const t = globalT
 const router=useRouter()
 
 interface Question {

@@ -11,7 +11,7 @@ function smartQueryStream(query: string): Promise<AxiosResponse> {
 
   const config = {
     method: 'post',
-    url: 'https://rag.xhpolaris.com/open_kf_api/queries/smart_query_stream',
+    url: 'http://127.0.0.1:7000/open_kf_api/queries/smart_query_stream',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJleHAiOjE3MTc3Mzg0Mjl9.o7fh59s5cUZQONB_tSylMWqDIsrc3YJDbzOb0nSjt2g',

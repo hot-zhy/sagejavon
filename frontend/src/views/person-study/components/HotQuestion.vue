@@ -9,7 +9,7 @@
 				<div class="hot-icon">
 					<img style="width:30px;" :src="iconHotQuestion" />
 				</div>
-				<div class="hot-title">热门题目</div>
+				<div class="hot-title">{{ t('hot_question') }}</div>
 			</div>
 			<exercise-list-brief :questions="questions"></exercise-list-brief>
 		</div>
@@ -21,6 +21,8 @@ import { ref, onMounted, computed } from 'vue';
 import exerciseListBrief from '@/components/exercise/exercise-list-brief.vue';
 import { hotChoice } from '../api/hot_question';
 import iconHotQuestion from '../images/hot-question.png'
+import { t as globalT } from '@/locales';
+const t= globalT
 
 interface KnowledgeConcept {
 	knowledgeId: number;

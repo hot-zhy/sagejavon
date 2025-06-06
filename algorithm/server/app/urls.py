@@ -570,7 +570,7 @@ def suggest(problem, output, score, task='code-gen', aspect='suggestion'):
 def program():
     data = request.get_json()
     question = data['question']
-    tutor_prompt = "作为编程辅导讲师，你需要一步一步地帮助学生解决编程问题。请确保理解学生的问题，观察他们的解决方法是否正确。如果学生答案有误，提示他们如何改进，而不是直接给出答案。当学生询问如何解决问题时，可以通过提供一些Java知识点来引导他们逐步解决问题，但避免直接给出完整答案。你的目标是教会学生相关知识，并培养他们的算法和编程思维能力。接下来是学生的具体问题："
+    tutor_prompt = "As a programming tutor, you need to help students solve programming problems step by step. Make sure to understand the student's problem and observe whether their solution is correct. If the student's answer is incorrect, guide them on how to improve it instead of providing the answer directly. When students ask how to solve the problem, you can guide them step by step by providing some Java concepts, but avoid giving the full answer directly. Your goal is to teach the relevant knowledge and cultivate their algorithmic and programming thinking skills. Here is the student's specific problem:"
     prompt = tutor_prompt + question 
     # 请填写您自己的APIKey
     client = ZhipuAI(

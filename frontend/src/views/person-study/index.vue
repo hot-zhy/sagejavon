@@ -2,13 +2,13 @@
   <div class="person-study-container">
     <QuestionHover :index="1" />
     <div class="card choice-question">
-      <MainCard :image="iconSelect" title="选择题" :description="choiceDescription" @click="navigateChoice"></MainCard>
+      <MainCard :image="iconSelect" :title="t('choiceTitle')" :description="choiceDescription" @click="navigateChoice"></MainCard>
     </div>
     <div class="card code-question">
-      <MainCard :image="iconCode" title="代码题" :description="codeDescription" @click="navigateProgram"></MainCard>
+      <MainCard :image="iconCode" :title="t('codeTitle')" :description="codeDescription" @click="navigateProgram"></MainCard>
     </div>
     <div class="card history" @click="navigateHistory">
-      <MainCard :image="iconHistory" title="历史记录" :description="historyDescription"></MainCard>
+      <MainCard :image="iconHistory" :title="t('historyTitle')" :description="historyDescription"></MainCard>
     </div>
     <div class="card hot-question">
       <HotQuestion />
@@ -25,7 +25,7 @@
           <div
             style="display: flex; flex-direction: row; column-gap: 0.8rem; align-items: center; justify-content: center;">
             <img class="statistics-img" :src="iconDays" />
-            <div class="statistics-text">连续打卡</div>
+            <div class="statistics-text">{{ t('consecutiveDays') }}</div>
           </div>
           <div class="statistics-number">{{ solveDays }}</div>
         </div>
@@ -33,7 +33,7 @@
           <div class="statistics-number">{{ solveQuestions }}</div>
           <div
             style="display: flex; flex-direction: row; column-gap: 0.8rem; align-items: center; justify-content: center;">
-            <div class="statistics-text">完成题目</div>
+            <div class="statistics-text">{{ t('completedQuestions') }}</div>
             <img class="statistics-img" :src="iconComplete" />
           </div>
         </div>
@@ -61,6 +61,9 @@ import Echart from "./components/Echart.vue"
 import HotQuestion from "./components/HotQuestion.vue"
 import HistoryRecord from "./components/HistoryRecord.vue"
 import { fetchPersonStudy } from './api/person-study';
+import { t as globalT } from '@/locales'
+
+const t = globalT
 
 //响应数据初始态 
 const choiceDescription = ref('加载中...');
@@ -90,17 +93,17 @@ function navigateHistory() {
 onMounted(async () => {
   try {
     const data = await fetchPersonStudy();
-    choiceDescription.value = `共收录${data.codeNumber}道选择题`;
-    codeDescription.value = `共收录${data.selectNumber}道代码题`;
-    historyDescription.value = `共收录${data.solveQuestions}条历史记录`;
+    choiceDescription.value = t('choiceQuestionCount', { count: data.codeNumber });;
+    codeDescription.value = t('codeQuestionCount', { count: data.selectNumber });
+    historyDescription.value = t('historyCount', { count: data.solveQuestions });
     solveDays.value = padNumber(data.solveDays);
     solveQuestions.value = padNumber(data.solveQuestions);
   } catch (error) {
-    choiceDescription.value = '数据加载失败';
-    codeDescription.value = '数据加载失败';
-    historyDescription.value = '数据加载失败';
-    solveDays.value = '数据加载失败';
-    solveQuestions.value = '数据加载失败';
+    choiceDescription.value = t('loadFailed');
+    codeDescription.value = t('loadFailed');
+    historyDescription.value = t('loadFailed');
+    solveDays.value = t('loadFailed');
+    solveQuestions.value = t('loadFailed');
   }
 });
 
