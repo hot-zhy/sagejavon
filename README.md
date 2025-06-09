@@ -1,4 +1,4 @@
-# 📘 SageJavon: A Personalized AI Tutor for Java Programming
+# SageJavon: A Personalized AI Tutor for Java Programming
 
 ## 🧩 Project Structure
 
