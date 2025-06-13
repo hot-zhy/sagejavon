@@ -64,14 +64,14 @@
             </div>
             <div style="font-size: 13px; color: #455a64; margin-top: 4px">
               Mastery Score:
-              <strong>{{ Math.round((node.width / 160) * 100) }}</strong> / 100
+              <strong>{{ Math.round((node.width / 2000) * 100) }}</strong> / 100
             </div>
             <div
               style="margin-top: 8px; background: #eceff1; border-radius: 4px; overflow: hidden; height: 6px"
             >
               <div
                 :style="{
-                  width: Math.min(100, Math.round((node.width / 160) * 100)) + '%',
+                  width: Math.min(100, Math.round((node.width / 2000) * 100)) + '%',
                   height: '100%',
                   background: masteryLevelColor(node.width),
                 }"
@@ -173,7 +173,7 @@ const getJavaStudyAdviceFromGLM = async (masteryData: string): Promise<string> =
 
 const exportPDF = async () => {
   const studentData = sortedNodeList.value
-    .map((node) => `- ${node.text}: ${Math.round(node.width)} / 160`)
+    .map((node) => `- ${node.text}: ${Math.round(node.width)} / 2000`)
     .join('\n')
   const markdown = await getJavaStudyAdviceFromGLM(studentData)
   const html = marked(`# 📘 Java Knowledge Report\n\n## 📌 AI-Powered Learning Suggestions\n\n${markdown}`)

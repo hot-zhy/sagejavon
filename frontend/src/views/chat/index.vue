@@ -21,8 +21,11 @@ import { smartQueryStream } from "./api/smart_query_stream";
 import { chatMessage } from "./api/chat_message";
 import { useBasicLayout } from "@/hooks/useBasicLayout";
 import { useChatStore, usePromptStore } from "@/store";
+import { updateKnowledgeNodes } from './api/update_knowledge_graph'
 import { t } from "@/locales";
 import QuestionHover from '@/components/question-list/QuestionHover.vue'
+import { base_url } from '../../utils/python-request';
+import { rag_url } from '../../utils/rag_url';
 let controller = new AbortController();
 
 // const openLongReply = import.meta.env.VITE_GLOB_OPEN_LONG_REPLY === 'true'
@@ -141,7 +144,7 @@ async function onConversation() {
   try {
     // 发起后端请求获取模型响应
     const response = await fetch(
-      "http://127.0.0.1:7000/open_kf_api/queries/smart_query_stream",
+      rag_url + "/open_kf_api/queries/smart_query_stream",
       {
         method: "POST",
         headers: {
@@ -195,6 +198,11 @@ async function onConversation() {
       }
 
       scrollToBottom();
+
+      // 更新知识图谱
+      const res = await updateKnowledgeNodes(localStorage.getItem('user-id'), message)
+      console.log('更新后的知识图谱节点')
+      console.log(res)
 
       // 将模型的回复保存到数据库中
       chatMessage({

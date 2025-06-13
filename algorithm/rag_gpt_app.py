@@ -15,7 +15,9 @@ from server.logger.logger_config import my_logger as logger
 
 
 app = Flask(__name__, static_folder=STATIC_DIR)
-CORS(app)
+# CORS(app)
+CORS(app, supports_credentials=False, origins="*")
+
 
 @app.route(f'/{MEDIA_DIR}/<path:filename>')
 def serve_media_file(filename):

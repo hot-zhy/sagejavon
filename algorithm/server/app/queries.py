@@ -435,10 +435,21 @@ def smart_query():
 @check_smart_query
 # @token_required
 def smart_query_stream():
+    # 处理预检请求（CORS preflight）
+    if request.method == 'OPTIONS':
+        return Response('', status=200, headers={
+            'Access-Control-Allow-Origin': request.headers.get('Origin', '*'),
+            'Access-Control-Allow-Credentials': 'true',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
+        })
+
     headers = {
         'Content-Type': 'text/event-stream',
         'Cache-Control': 'no-cache',
-        'X-Accel-Buffering': 'no'
+        'X-Accel-Buffering': 'no',
+        'Access-Control-Allow-Origin': request.headers.get('Origin', '*'),
+        'Access-Control-Allow-Credentials': 'true'
     }
 
     try:

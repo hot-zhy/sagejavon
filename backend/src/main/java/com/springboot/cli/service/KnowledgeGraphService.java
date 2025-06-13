@@ -10,4 +10,6 @@ import java.util.List;
 public interface KnowledgeGraphService {
 
     List<KnowledgeGraphVO> getKnowledgeGraph(String studentId);
+
+    String update(String studentId, String query);
 }

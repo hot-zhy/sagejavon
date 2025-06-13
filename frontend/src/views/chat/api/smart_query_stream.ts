@@ -5,7 +5,7 @@ import type { AxiosResponse } from 'axios'
 function smartQueryStream(query: string): Promise<AxiosResponse> {
   const data = {
     query,
-    user_id: 'a9578288-05d4-4335-8f7e-eb214e9c1efa',
+    user_id: '9ddc73e1-4992-4618-9e58-5bdf57bf3b91',
   }
 
   return pythonRequest.post('/open_kf_api/queries/smart_query_stream', data)

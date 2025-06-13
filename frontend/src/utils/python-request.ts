@@ -1,7 +1,7 @@
 import axios from "axios";
 // Python 后端服务实例
 const pythonRequest = axios.create({
-  baseURL: 'https://rag.xhpolaris.com',
+  baseURL: 'http://127.0.0.1:7000',
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json',
@@ -15,3 +15,4 @@ pythonRequest.interceptors.request.use(config => {
 });
 
 export default pythonRequest;
+
