@@ -67,10 +67,10 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public void registerStu(StudentDO studentDO) {
-        StudentDO student = studentRepository.getOne(Wrappers.<StudentDO>lambdaQuery().eq(StudentDO::getNickname, studentDO.getNickname()));
+        StudentDO student = studentRepository.getOne(Wrappers.<StudentDO>lambdaQuery().eq(StudentDO::getPhone, studentDO.getPhone()), false);
         //1. 判断是否用户名重复
         if (student != null) {
-            throw new OpException(OpExceptionEnum.NICKNAME_ERROR);
+            throw new OpException(OpExceptionEnum.ALREADY_REGISTER);
         }
         //2. 用户名长度检查
         if(studentDO.getNickname() != null && studentDO.getNickname().length()>10){
@@ -96,7 +96,7 @@ public class StudentServiceImpl implements StudentService {
 
         // 👇 初始化知识图谱
         String studentId = studentDO.getId();
-        initKnowledgeGraphForStudent(studentId);
+//        initKnowledgeGraphForStudent(studentId);
     }
 
     // 7. 初始化方法调用

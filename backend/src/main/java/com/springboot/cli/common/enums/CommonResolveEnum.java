@@ -20,6 +20,8 @@ public enum CommonResolveEnum implements OpResolve {
     CHECK_PASSWORD("请检查密码"),
 
     REGISTER_USER("请进行注册"),
+
+    REGISTER_ALREADY("用户已注册")
     ;
     final String message;
 

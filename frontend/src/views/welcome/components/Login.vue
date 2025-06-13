@@ -84,7 +84,9 @@ async function handleRegister() {
   if (!validateFields()) return;
   try {
     const res = await register(account.value, password.value);
-    if (res.status === 200) {
+    if(res.data.code === "ALREADY_REGISTER"){
+      error(t('registerFailed'));
+    } else if (res.status === 200 && res.data.code==="SUCCESS" ) {
       success(t('registerSuccess'));
       isLogin.value = true;
       password.value = '';

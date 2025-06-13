@@ -13,6 +13,7 @@ import static com.springboot.cli.common.enums.CommonResolveEnum.*;
 @AllArgsConstructor
 @Getter
 public enum OpExceptionEnum {
+    ALREADY_REGISTER("ALREADY_REGISTER", "用户已注册，请直接登录", REGISTER_ALREADY),
 
     ILLEGAL_ARGUMENT("ILLEGAL_ARGUMENT", "非法参数", CHECK_ARGUMENT),
 
