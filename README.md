@@ -132,7 +132,7 @@ server/app/model-1/
 ### Support Module
 
 · student's personal knowledge graph and his/her learning report(suggesstions and learning path)
-![image](https://github.com/user-attachments/assets/5301457a-876d-4a8e-a752-7021102606d1)
+![image](https://github.com/user-attachments/assets/6dbc1bd2-23cf-4503-95df-c7f2303e6de2)
 
 
 · learning report downloaded:
