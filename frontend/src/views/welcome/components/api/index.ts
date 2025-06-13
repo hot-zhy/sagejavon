@@ -1,17 +1,15 @@
 // src/components/api/index.ts
-import axios from 'axios';
-
-const baseURL = 'http://localhost:8080'; // 根据你的实际后端接口路径调整
+import request from '@/utils/request'; // 注意路径别名，如果没配置 @，用相对路径
 
 export async function login(phone: string, password: string) {
-  return axios.post(`${baseURL}/login`, {
+  return request.post('/login', {
     phone,
     password,
   });
 }
 
 export async function register(phone: string, password: string) {
-  return axios.post(`${baseURL}/register`, {
+  return request.post('/register', {
     phone,
     password,
   });

@@ -1,5 +1,6 @@
-import type { AxiosError, AxiosResponse } from 'axios';
-import axios from 'axios';
+// src/components/api/question.ts
+import request from '@/utils/request'; // 如果你没配置路径别名，就用相对路径
+import type { AxiosResponse } from 'axios';
 
 interface Request {
   difficulty?: number;
@@ -20,26 +21,15 @@ function questionChapter(query: Request): Promise<AxiosResponse> {
     pageSize: pageSize.toString(),
     chapter: chapter.toString(),
     ...rest,
-  }).toString();
+  });
 
-  const config = {
-    method: 'get',
-    url: `http://localhost:8080/question/list?${params}`,
+  return request.get(`/question/list`, {
+    params,
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',
-      'Content-Type': 'application/json',
-      'token': localStorage.getItem('user-token') || '',
-    },
-  };
-
-  return axios(config)
-    .then((response: AxiosResponse) => {
-      return response;
-    })
-    .catch((error: AxiosError) => {
-      throw error;
-    });
+    }
+  });
 }
 
 export { questionChapter };

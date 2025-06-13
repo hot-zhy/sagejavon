@@ -1,41 +1,26 @@
-import type { AxiosError, AxiosResponse } from 'axios';
-import axios from 'axios';
-
-const API_BASE_URL = `http://localhost:8080/question/review`;
+// src/components/api/question.ts
+import  javaRequest  from '@/utils/request';
+import type { AxiosResponse } from 'axios';
 
 interface ReviewResponse {
-  data: number;      // 评价
-  code: string;      // 响应码 
-  message: string;   // 响应消息 
-  resolve: string | null; // 解析结果 
+  data: number;
+  code: string;
+  message: string;
+  resolve: string | null;
 }
 
-//提交问题评价
+// 提交问题评价
 export async function reviewQuestion(
   exerciseId: number,
-  review: number,
-  token: string = ''
+  review: number
 ): Promise<AxiosResponse<ReviewResponse>> {
-  const params = new URLSearchParams({
-    exerciseId: exerciseId.toString(),
-    review: review.toString(),
-  }).toString();
-
-  const config = {
-    method: 'post',
-    url: `${API_BASE_URL}?${params}`,
-    headers: {
-      'Content-Type': 'application/json',
-      'token': localStorage.getItem('user-token') || '',
+  return javaRequest.post('/question/review', null, {
+    params: {
+      exerciseId: exerciseId,
+      review: review
     },
-  };
-
-  return axios(config)
-    .then((response: AxiosResponse<ReviewResponse>) => {
-      return response;
-    })
-    .catch((error: AxiosError) => {
-      console.error('问题评价提交失败:', error);
-      throw error;
-    });
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
 }

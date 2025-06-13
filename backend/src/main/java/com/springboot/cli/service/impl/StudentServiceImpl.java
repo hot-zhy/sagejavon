@@ -96,10 +96,9 @@ public class StudentServiceImpl implements StudentService {
 
         // 👇 初始化知识图谱
         String studentId = studentDO.getId();
-//        initKnowledgeGraphForStudent(studentId);
+        initKnowledgeGraphForStudent(studentId);
     }
 
-    // 7. 初始化方法调用
     // 7. 初始化方法调用
     public void initKnowledgeGraphForStudent(String studentId) {
         // 初始化节点
@@ -107,10 +106,10 @@ public class StudentServiceImpl implements StudentService {
                 .map(node -> {
                     KnowledgeNodesDO n = new KnowledgeNodesDO();
                     n.setStudentId(studentId);
-                    n.setNodeId(String.valueOf(node.getId()));  // 知识点ID（图谱中的逻辑ID）
+                    n.setNodeId(node.getNodeId());
                     n.setText(node.getText());
-                    n.setWidth(0);  // 初始化宽高为 0
-                    n.setHeight(0);
+                    n.setWidth(140);  // 初始化宽高为 0
+                    n.setHeight(120);
                     n.setCreateTime(LocalDateTime.now());
                     n.setUpdateTime(LocalDateTime.now());
                     return n;

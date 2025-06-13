@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { NButton, NInput, useMessage, NModal } from 'naive-ui'
 import { getUserInfo } from './api/info/get_user_info'
-import { updateUserInfoAPI } from '@/views/chat/api/update_user_info'
+import  updateUserInfoAPI  from '@/views/chat/api/update_user_info'
 const avatar = ref('')
 const name = ref('')
 const gender = ref('')

@@ -18,10 +18,11 @@ import { useScroll } from "./hooks/useScroll";
 import { useChat } from "./hooks/useChat";
 import { useUsingContext } from "./hooks/useUsingContext";
 import { smartQueryStream } from "./api/smart_query_stream";
-import { chatTutor } from "./api/chat_tutor";
+// import { chatTutor } from "./api/chat_tutor";
 import { HoverButton, SvgIcon } from "@/components/common";
 import { useBasicLayout } from "@/hooks/useBasicLayout";
 import { useChatStore, usePromptStore } from "@/store";
+import { fetchProgramTutor } from './api/program_tutor';
 import { t } from "@/locales";
 import QuestionHover from "@/components/question-list/QuestionHover.vue";
 let controller = new AbortController();
@@ -127,22 +128,12 @@ async function onConversation() {
       ? window.location.hash
       : Math.random().toString(),
   };
+
+
   try {
-    // 发起后端请求获取模型响应
-    const response = await fetch(
-      "http://127.0.0.1:7000/open_kf_api/urls/get_program_tutor",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          question: message,
-        }),
-      }
-    );
-    console.log(response.body);
-    if (response.status == 500) {
+    const response = await fetchProgramTutor(message);
+
+    if (response.status === 500) {
       addChat(+localStorage.getItem("program-uuid"), {
         dateTime: new Date().toLocaleString(),
         text: "账户已经欠费，请联系工作人员进行充值！",
@@ -155,9 +146,10 @@ async function onConversation() {
           options: {},
         },
       });
-    } else if (response.status == 200) {
-      const data = await response.json();
+    } else if (response.status === 200) {
+      const data = response.data;
       const answer = data.data.response;
+
       addChat(+localStorage.getItem("program-uuid"), {
         dateTime: new Date().toLocaleString(),
         text: "SageJavon思考中....",
@@ -168,33 +160,27 @@ async function onConversation() {
         requestOptions: { prompt: message, options: { ...options } },
       });
       scrollToBottom();
-      let finalResponse = answer;
-      updateChat(
-        +localStorage.getItem("program-uuid"),
-        dataSources.value.length - 1,
-        {
-          dateTime: new Date().toLocaleString(),
-          text: finalResponse,
-          inversion: false,
-          error: false,
-          loading: false,
-          conversationOptions: {},
-          requestOptions: { prompt: message, options: {} },
-        }
-      );
 
-      // 将模型的回复保存到数据库中
+      const finalResponse = answer;
+      updateChat(+localStorage.getItem("program-uuid"), dataSources.value.length - 1, {
+        dateTime: new Date().toLocaleString(),
+        text: finalResponse,
+        inversion: false,
+        error: false,
+        loading: false,
+        conversationOptions: {},
+        requestOptions: { prompt: message, options: {} },
+      });
+
+      // 保存模型回复
       chatTutor({
         chatId: Number(localStorage.getItem("active-uuid")),
         role: 1,
         content: finalResponse,
       })
         .then((res) => {
-          console.log(res);
           if (res.status === 200) {
             console.log("数据库添加成功-tutor");
-          } else {
-            // 更新失败
           }
         })
         .catch((err) => {
@@ -203,23 +189,13 @@ async function onConversation() {
 
       scrollToBottom();
     }
-  } catch (error: any) {
-    // console.error('Error calling GLM:', error)
-    // // 如果调用出错，添加错误消息到聊天记录
-    // addChat(+localStorage.getItem('active-uuid'), {
-    //   dateTime: new Date().toLocaleString(),
-    //   text: '账户已经欠费，请联系工作人员进行充值！',
-    //   inversion: false,
-    //   error: true,
-    //   loading: false,
-    //   conversationOptions: null,
-    //   requestOptions: { prompt: message, options: {} },
-    // })
-
+  } catch (error) {
+    console.error('调用失败:', error);
     scrollToBottom();
   } finally {
     loading.value = false;
   }
+
 }
 
 function handleExport() {

@@ -1,13 +1,13 @@
-import axios, { AxiosError, AxiosResponse } from 'axios';
+// src/components/api/chat.ts
+import request from '@/utils/request';
+import type { AxiosResponse } from 'axios';
 
 async function deleteChat(chatId: number): Promise<AxiosResponse> {
-  const token = localStorage.getItem('user-token');
-
   try {
-    const response = await axios.delete(`http://localhost:8080/chat?chatId=${chatId}`, {
+    const response = await request.delete('/chat', {
+      params: { chatId }, // ✅ 将 chatId 放在 params 中
       headers: {
-        'token': token,
-        'Content-Type': 'application/json', // 可选，如果服务端要求
+        'Content-Type': 'application/json', // 可保留或略去，视后端需求
       },
     });
     return response;

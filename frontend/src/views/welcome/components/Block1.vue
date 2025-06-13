@@ -14,8 +14,8 @@
     </div>
     <!-- 登录 -->
     <LoginPasswordForm />
-    
-    
+
+
   </div>
   <div class="block1Container" :style="{ height: height + 'px' }">
     <div class="placeholder"></div>

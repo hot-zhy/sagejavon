@@ -1,5 +1,6 @@
-import type { AxiosError, AxiosResponse } from 'axios';
-import axios from 'axios';
+// src/components/api/question.ts
+import javaRequest from '@/utils/request';
+import type { AxiosResponse } from 'axios';
 
 interface Request {
   difficulty?: number;
@@ -11,35 +12,14 @@ interface Request {
 }
 
 function questionProgram(query: Request): Promise<AxiosResponse> {
-  const { difficulty, knowledgeId, pageNum, pageSize, type, ...rest } = query;
-
-  const params = new URLSearchParams({
-    difficulty: difficulty?.toString() || '',
-    knowledgeId: knowledgeId || '',
-    pageNum: pageNum.toString(),
-    pageSize: pageSize.toString(),
-    type: type.toString(),
-    ...rest,
-  }).toString();
-
-  const config = {
-    method: 'get',
-    url: `http://localhost:8080/question/list?${params}`,
+  return javaRequest.get('/question/list', {
+    params: query,
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',
-      'Content-Type': 'application/json',
-      'token': localStorage.getItem('user-token') || '',
-    },
-  };
-
-  return axios(config)
-    .then((response: AxiosResponse) => {
-      return response;
-    })
-    .catch((error: AxiosError) => {
-      throw error;
-    });
+      'Content-Type': 'application/json'
+    }
+  });
 }
 
 export { questionProgram };

@@ -1,12 +1,11 @@
-import axios, { AxiosError, AxiosResponse } from 'axios';
+// src/components/api/question.ts
+import javaRequest from '@/utils/request';
+import type { AxiosResponse } from 'axios';
 
 export interface Request {
-    choice: string;
-    /**
-     * 选择题id
-     */
-    id: number;
-    [property: string]: any;
+  choice: string;
+  id: number;
+  [property: string]: any;
 }
 
 function questionSelect(query: Request): Promise<AxiosResponse> {
@@ -16,31 +15,20 @@ function questionSelect(query: Request): Promise<AxiosResponse> {
   params.append('choice', choice?.toString() || '');
   params.append('id', id.toString());
 
-  // Append additional properties from `rest`
+  // 追加其他属性
   for (const key in rest) {
     if (Object.prototype.hasOwnProperty.call(rest, key)) {
       params.append(key, rest[key]?.toString() || '');
     }
   }
 
-  const config = {
-    method: 'post',
-    url: `http://localhost:8080/question/select?${params.toString()}`,
+  return javaRequest.post(`/question/select?${params.toString()}`, null, {
     headers: {
       'X-Xh-Env': 'prod',
       'X-Xh-Lane': '',
-      'Content-Type': 'application/json',
-      'token': localStorage.getItem('user-token') || '',
-    },
-  };
-
-  return axios(config)
-    .then((response: AxiosResponse) => {
-      return response;
-    })
-    .catch((error: AxiosError) => {
-      throw error;
-    });
+      'Content-Type': 'application/json'
+    }
+  });
 }
 
 export { questionSelect };
